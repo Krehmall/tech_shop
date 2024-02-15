@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Home</title>
+</head>
+<body>
+    <div class="header_nav">
+        <h2 class="logo">Tech Shop</h2>
+        <div>
+            <label>Sort by: </label>
+            <select name="" id="">
+                <option value="">Name</option>
+                <option value="">Price</option>
+                <input>
+                <button>Sort</button>
+            </select>
+        </div>
+
+        <nav class="nav_bar">
+            <select onchange="sort(event)">
+                <option value="all">All</option>
+                <option value="tablet">Tablet</option>
+                <option value="laptop">Laptop</option>
+                <option value="pc">Pc</option>
+                <option value="Smartphone">Smartphone</option>
+            </select>
+            <button class="nav_btn">Cart</label>
+            <button class="nav_btn" onclick="logout()">Log Out</button>
+        </nav>
+    </div>
+
+
+    <div class="content_page">
+        <div class="products_list" id="products_list"></div>
+    </div>
+
+    <script src="js/storgeService.js"></script>
+    <script src="js/rendr.js"></script>
+</body>
+</html>
