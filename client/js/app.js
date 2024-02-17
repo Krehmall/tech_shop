@@ -14,16 +14,23 @@ function validLoginInfo(username, password) {
 async function login(event) {
   try {
     event.preventDefault();
-    const username = document.getElementById("username").value;
-    const password = document.getElementById("password").value;
+    // const username = document.getElementById("username").value;
+    // const password = document.getElementById("password").value;
 
-    const valid = validLoginInfo(username, password);
+    // const valid = validLoginInfo(username, password);
 
-    if (valid) {
-      window.location.href = "/home.html";
-    } else {
-      alert("Sunthing wrong with your informtion");
-    }
+    // if (valid) {
+    //   window.location.href = "/home.html";
+    // } else {
+    //   alert("Sunthing wrong with your informtion");
+    // }
+    const filterBy = "category";
+    const value = "Mouses";
+    const sortBy = "name";
+    const queryParams = `/?filterBy=${filterBy}&value=${value}&sortBy=${sortBy}`;
+    const response = await fetch(`/api/products` + queryParams);
+    const data = await response.json();
+    console.log(data);
   } catch (error) {
     console.log(error);
     alert(error);
@@ -84,14 +91,7 @@ function renderProductList(products) {
       colorTxt = "txt_red";
     }
 
-    return productsData(
-      item.img,
-      item.name,
-      item.description,
-      item.price,
-      inStoc,
-      colorTxt
-    );
+    return productsData(item.img, item.name, item.description, item.price, inStoc, colorTxt);
   });
 
   document.querySelector("#products_list").innerHTML = htmlProducts.join("");

@@ -33,17 +33,17 @@ async function getUserByUsername(username) {
   }
 }
 
-async function updatePassword(username, newPassword) {
-  try {
-    const collection = await getCollection(entity);
-    await collection.updateOne(
-      { username: username },
-      { $set: { password: newPassword } }
-    );
-    console.log(`User "${username}" have been changed password successfully`);
-  } catch (error) {
-    console.log(error);
-  }
-}
+// async function updatePassword(username, newPassword) {
+//   try {
+//     const collection = await getCollection(entity);
+//     await collection.updateOne(
+//       { username: username },
+//       { $set: { password: newPassword } }
+//     );
+//     console.log(`User "${username}" have been changed password successfully`);
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
 
-module.exports = { addUser, getUserByUsername, updatePassword };
+module.exports = { addUser, getUserByUsername };

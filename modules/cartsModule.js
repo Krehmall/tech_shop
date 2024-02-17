@@ -2,14 +2,15 @@
 // const { MongoClient, ObjectId } = require("mongodb");
 const { getCollection, toObjectId } = require("./dbModule.js");
 // const { getProductById, getProducts, updateProductStockBy, uniqueValuesByKey } = require("./productsModule.js");
-const { addUser, getUserByUsername, updatePassword } = require("./usersModule.js");
+const { addUser, getUserByUsername } = require("./usersModule.js");
 
 const entity = "carts";
 
 async function addProductToCart(product, cartUsername) {
   try {
-    const [collection, userCart] = await getCart(cartUsername);
-    const isProductInCart = userCart.productsInCart.find((item) => item.name === product.name);
+    const userCart = await getCart(cartUsername);
+    const collection = await getCollection(entity);
+    const isProductInCart = userCart.productsInCart.find((item) => item._id.equals(product._id));
     if (isProductInCart) {
       const index = userCart.productsInCart.indexOf(isProductInCart);
       userCart.productsInCart[index].items++;
@@ -26,8 +27,9 @@ async function addProductToCart(product, cartUsername) {
 
 async function removeProductFromCart(product, cartUsername) {
   try {
-    const [collection, userCart] = await getCart(cartUsername);
-    const isProductInCart = userCart.productsInCart.find((item) => item.name === product.name);
+    const userCart = await getCart(cartUsername);
+    const collection = await getCollection(entity);
+    const isProductInCart = userCart.productsInCart.find((item) => item._id.equals(product._id));
     if (isProductInCart) {
       const index = userCart.productsInCart.indexOf(isProductInCart);
       if (userCart.productsInCart[index].items > 1) {
@@ -52,8 +54,8 @@ async function getCart(cartUsername) {
     if (!cart) {
       throw new Error("There is no cart exist for that user!!!");
     }
-    console.log(cart);
-    return [collection, cart];
+    // console.log(cart);
+    return cart;
   } catch (error) {
     console.log(error);
   }
@@ -78,11 +80,12 @@ async function createCart(cartUsername) {
   }
 }
 
-async function removeCart(cartUsername) {
+async function clearCart(cartUsername) {
   try {
-    const [collection, userCart] = await getCart(cartUsername);
-    collection.deleteOne(userCart);
-    console.log(`A cart has been removed for a user "${cartUsername}"`);
+    const collection = await getCollection(entity);
+    const userCart = await getCart(cartUsername);
+    await collection.updateOne({ username: cartUsername }, { $set: { productsInCart: [] } });
+    console.log(`A cart has been cleared for a user "${cartUsername}"`);
   } catch (error) {
     console.log(error);
   }
@@ -93,5 +96,5 @@ module.exports = {
   removeProductFromCart,
   getCart,
   createCart,
-  removeCart,
+  clearCart,
 };
