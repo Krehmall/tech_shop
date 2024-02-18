@@ -11,13 +11,13 @@ function validLoginInfo(email, password) {
   return valid;
 }
 
-function validRegisterInfo(email,userName,password,confirmPassword) {
+function validRegisterInfo(email, userName, password, confirmPassword) {
   let valid = true;
   if (!email.includes("@")) {
     valid = false;
-  }else if(userName===""){
-    valid=false
-  }else if (password.length < 3|| password !==confirmPassword) {
+  } else if (userName === "") {
+    valid = false;
+  } else if (password.length < 3 || password !== confirmPassword) {
     valid = false;
   }
 
@@ -28,8 +28,8 @@ async function makeFetchRequest(url, method = "GET", body = null) {
     method,
     headers: { "Content-Type": "application/json" },
     body: body ? JSON.stringify(body) : null,
-  })
-  return response
+  });
+  return response;
 }
 
 async function login(event) {
@@ -41,14 +41,17 @@ async function login(event) {
     const valid = validLoginInfo(email, password);
 
     if (valid) {
-      const response =await makeFetchRequest("/api/login","POST",{ email, password })
-      const data = await response.json()
+      const response = await makeFetchRequest("/api/login", "POST", {
+        email,
+        password,
+      });
+      const data = await response.json();
       if (!data.success) {
-        alert(data.message)
-        return
+        alert(data.message);
+        return;
       }
-      const loggedInUser = data.user
-      storageService.setUser(loggedInUser)
+      const loggedInUser = data.user;
+      storageService.setUser(loggedInUser);
       window.location.href = "/home.html";
     } else {
       alert("Sunthing wrong with your informtion");
@@ -68,17 +71,21 @@ async function register(event) {
     const password = document.getElementById("password").value;
     const confirmPassword = document.getElementById("confirm_password").value;
 
-    const valid = validRegisterInfo(email,username, password,confirmPassword);
+    const valid = validRegisterInfo(email, username, password, confirmPassword);
 
     if (valid) {
-      const response =await makeFetchRequest("/api/register","POST",{ email,username, password })
-      const data = await response.json()
+      const response = await makeFetchRequest("/api/register", "POST", {
+        email,
+        username,
+        password,
+      });
+      const data = await response.json();
       if (!data.success) {
-        alert(data.message)
-        return
+        alert(data.message);
+        return;
       }
-      const loggedInUser = data.user
-      storageService.setUser(loggedInUser)
+      const loggedInUser = data.user;
+      storageService.setUser(loggedInUser);
       window.location.href = "/login.html";
     } else {
       alert("Sunthing wrong with your informtion");
@@ -90,7 +97,7 @@ async function register(event) {
 }
 
 /*nav*/
-function logOut(){
+function logOut() {
   storageService.clearAll();
   window.location.href = "/login.html";
 }
@@ -127,15 +134,21 @@ function renderProductList(products) {
       colorTxt = "txt_red";
     }
 
-    return productsData(item.img, item.name, item.description, item.price, inStoc, colorTxt);
+    return productsData(
+      item.img,
+      item.name,
+      item.description,
+      item.price,
+      inStoc,
+      colorTxt
+    );
   });
 
   document.querySelector("#products_list").innerHTML = htmlProducts.join("");
 }
 
-async function renderHomeProducts(){
-  const response =await makeFetchRequest("/api/products")
-  const data = await response.json()
+async function renderHomeProducts() {
+  const response = await makeFetchRequest("/api/products");
+  const data = await response.json();
   console.log(data.products);
-  test
 }
