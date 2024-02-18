@@ -21,10 +21,10 @@ async function addUser(email, username, password, isAdmin = false) {
   }
 }
 
-async function getUserByUsername(username) {
+async function getUserByEmail(email) {
   try {
     const collection = await getCollection(entity);
-    const user = await collection.findOne({ username });
+    const user = await collection.findOne({ email });
     if (!user) throw new Error("User not found😢");
     const { password, ...restUserDetails } = user;
     return restUserDetails;
@@ -46,4 +46,4 @@ async function getUserByUsername(username) {
 //   }
 // }
 
-module.exports = { addUser, getUserByUsername };
+module.exports = { addUser, getUserByEmail };

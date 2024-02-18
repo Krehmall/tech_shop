@@ -1,8 +1,8 @@
 /*login*/
 
-function validLoginInfo(username, password) {
+function validLoginInfo(email, password) {
   let valid = true;
-  if (!username.includes("@")) {
+  if (!email.includes("@")) {
     valid = false;
   } else if (password.length < 3) {
     valid = false;
@@ -11,20 +11,48 @@ function validLoginInfo(username, password) {
   return valid;
 }
 
+function validRegisterInfo(email,userName,password,confirmPassword) {
+  let valid = true;
+  if (!email.includes("@")) {
+    valid = false;
+  }else if(userName===""){
+    valid=false
+  }else if (password.length < 3|| password !==confirmPassword) {
+    valid = false;
+  }
+
+  return valid;
+}
+async function makeFetchRequest(url, method = "GET", body = null) {
+  const response = await fetch(url, {
+    method,
+    headers: { "Content-Type": "application/json" },
+    body: body ? JSON.stringify(body) : null,
+  })
+  return response
+}
+
 async function login(event) {
   try {
     event.preventDefault();
-    const username = document.getElementById("username").value;
+    const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
 
-    const valid = validLoginInfo(username, password);
+    const valid = validLoginInfo(email, password);
 
     if (valid) {
+      const response =await makeFetchRequest("/api/login","POST",{ email, password })
+      const data = await response.json()
+      if (!data.success) {
+        alert(data.message)
+        return
+      }
+      const loggedInUser = data.user
+      storageService.setUser(loggedInUser)
       window.location.href = "/home.html";
     } else {
       alert("Sunthing wrong with your informtion");
     }
-    console.log(data);
   } catch (error) {
     console.log(error);
     alert(error);
@@ -35,12 +63,22 @@ async function login(event) {
 async function register(event) {
   try {
     event.preventDefault();
-    const username = document.getElementById("email").value;
+    const username = document.getElementById("username").value;
+    const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
+    const confirmPassword = document.getElementById("confirm_password").value;
 
-    const valid = validLoginInfo(username, password);
+    const valid = validRegisterInfo(email,username, password,confirmPassword);
 
     if (valid) {
+      const response =await makeFetchRequest("/api/register","POST",{ email,username, password })
+      const data = await response.json()
+      if (!data.success) {
+        alert(data.message)
+        return
+      }
+      const loggedInUser = data.user
+      storageService.setUser(loggedInUser)
       window.location.href = "/login.html";
     } else {
       alert("Sunthing wrong with your informtion");
@@ -52,6 +90,10 @@ async function register(event) {
 }
 
 /*nav*/
+function logOut(){
+  storageService.clearAll();
+  window.location.href = "/login.html";
+}
 
 function sort(event) {
   alert("click");
@@ -89,4 +131,10 @@ function renderProductList(products) {
   });
 
   document.querySelector("#products_list").innerHTML = htmlProducts.join("");
+}
+
+async function renderHomeProducts(){
+  const response =await makeFetchRequest("/api/products")
+  const data = await response.json()
+  console.log(data);
 }

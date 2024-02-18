@@ -3,7 +3,7 @@ dotenv.config();
 const express = require("express");
 const app = express();
 const path = require("path");
-const { addUser, getUserByUsername } = require("./modules/usersModule.js");
+const { addUser, getUserByEmail } = require("./modules/usersModule.js");
 const { getProductById, getProducts, updateProductStockBy, uniqueValuesByKey } = require("./modules/productsModule.js");
 const { addProductToCart, removeProductFromCart, getCart, createCart, clearCart } = require("./modules/cartsModule.js");
 
@@ -14,13 +14,6 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "client", "login.html"));
 });
 
-app.get("/register", (req, res) => {
-  res.sendFile(path.join(__dirname, "client", "register.html"));
-});
-
-app.get("/home", (req, res) => {
-  res.sendFile(path.join(__dirname, "client", "home.html"));
-});
 
 app.get("/api/categories", async (req, res) => {
   const companies = await uniqueValuesByKey("companyName");
@@ -30,8 +23,8 @@ app.get("/api/categories", async (req, res) => {
 
 app.post("/api/login", async (req, res) => {
   try {
-    const { username, password } = req.body;
-    const user = await getUserByUsername(username);
+    const { email, password } = req.body;
+    const user = await getUserByEmail(email);
     return res.send({ success: true, user });
   } catch (error) {
     console.log(error);
@@ -118,3 +111,4 @@ const PORT = 3000;
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
+// getProducts()

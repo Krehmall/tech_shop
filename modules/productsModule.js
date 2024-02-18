@@ -31,6 +31,7 @@ async function getProducts(filterBy = null, value, sortBy = null) {
     const products = await collection.find(filter).sort(sorter).toArray();
     const message = `We got ${products.length} items sorted by ${sortBy} and filtered by "${filterBy}":"${value}" `;
     console.log(message);
+    console.log(products)
     return products;
   } catch (error) {
     console.log(error);

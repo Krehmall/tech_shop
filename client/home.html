@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/main.css">
     <title>Home</title>
 </head>
-<body>
+<body onload="renderHomeProducts()">
     <div class="header_nav">
         <h2 class="logo">Tech Shop</h2>
         <div>
@@ -28,7 +28,7 @@
                 <option value="Smartphone">Smartphone</option>
             </select>
             <button class="nav_btn">Cart</label>
-            <button class="nav_btn" onclick="logout()">Log Out</button>
+            <button class="nav_btn" onclick="logOut()">Log Out</button>
         </nav>
     </div>
 
@@ -38,6 +38,6 @@
     </div>
 
     <script src="js/storgeService.js"></script>
-    <script src="js/rendr.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
