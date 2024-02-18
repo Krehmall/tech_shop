@@ -136,5 +136,6 @@ function renderProductList(products) {
 async function renderHomeProducts(){
   const response =await makeFetchRequest("/api/products")
   const data = await response.json()
-  console.log(data);
+  console.log(data.products);
+  test
 }
