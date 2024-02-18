@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/main.css">
     <title>Home</title>
 </head>
-<body onload="renderHomeProducts()">
+<body onload="init()">
     <div class="header_nav">
         <h2 class="logo">Tech Shop</h2>
         <div>
@@ -20,7 +20,7 @@
         </div>
 
         <nav class="nav_bar">
-            <select onchange="sort(event)">
+            <select id="catagories" onchange="filterByCatagory(event)">
                 <option value="all">All</option>
                 <option value="tablet">Tablet</option>
                 <option value="laptop">Laptop</option>
