@@ -24,7 +24,7 @@ app.get("/api/categories", async (req, res) => {
 app.post("/api/login", async (req, res) => {
   try {
     const { email, password } = req.body;
-    const user = await getUserByEmail(email);
+    const user = await getUserByEmail(email,password);
     return res.send({ success: true, user });
   } catch (error) {
     console.log(error);
@@ -59,7 +59,7 @@ app.get("/api/product", async (req, res) => {
   try {
     const queryStringParam = req.query;
     console.log(queryStringParam);
-    const products = await getProductById(id);
+    const product = await getProductById(id);
     return res.send({ success: true, product });
   } catch (error) {
     return res.status(400).send({ success: false, message: error.message });
@@ -111,4 +111,4 @@ const PORT = 3000;
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
-// getProducts()
+// getUserByEmail("or0548096690@gmail.com","Ii123456")

@@ -21,12 +21,12 @@ async function addUser(email, username, password, isAdmin = false) {
   }
 }
 
-async function getUserByEmail(email) {
+async function getUserByEmail(email,password) {
   try {
     const collection = await getCollection(entity);
-    const user = await collection.findOne({ email });
+    const user = await collection.findOne({ email:email,password:password });
     if (!user) throw new Error("User not found😢");
-    const { password, ...restUserDetails } = user;
+    const { userPassword, ...restUserDetails } = user;
     return restUserDetails;
   } catch (error) {
     console.log(error);
