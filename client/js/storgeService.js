@@ -7,7 +7,7 @@ const CART_KEY = "cart";
 const storageService = {
   getProducts() {
     const products = JSON.parse(localStorage.getItem(PRODUCTS_KEY));
-    return products || [];
+    return products || null;
   },
   setProducts(products) {
     localStorage.setItem(PRODUCTS_KEY, JSON.stringify(products));
@@ -18,6 +18,13 @@ const storageService = {
   },
   setUser(user) {
     localStorage.setItem(USER_KEY, JSON.stringify(user));
+  },
+  getCart() {
+    const cart = JSON.parse(localStorage.getItem(CART_KEY));
+    return cart || null;
+  },
+  setCart(cart) {
+    localStorage.setItem(CART_KEY, JSON.stringify(cart));
   },
   clearAll() {
     localStorage.removeItem(USER_KEY);

@@ -14,7 +14,6 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "client", "login.html"));
 });
 
-
 app.get("/api/categories", async (req, res) => {
   const companies = await uniqueValuesByKey("companyName");
   const categories = await uniqueValuesByKey("category");
@@ -24,7 +23,8 @@ app.get("/api/categories", async (req, res) => {
 app.post("/api/login", async (req, res) => {
   try {
     const { email, password } = req.body;
-    const user = await getUserByEmail(email,password);
+    const user = await getUserByEmail(email, password);
+    console.log(user);
     return res.send({ success: true, user });
   } catch (error) {
     console.log(error);
@@ -37,7 +37,7 @@ app.post("/api/register", async (req, res) => {
     const { email, username, password } = req.body;
     await addUser(email, username, password);
     await createCart(username);
-    res.send({ success: true });
+    return res.send({ success: true });
   } catch (error) {
     console.log(error);
     return res.status(400).send({ success: false, message: error.message });
@@ -55,37 +55,37 @@ app.get("/api/products", async (req, res) => {
   }
 });
 
-app.get("/api/product", async (req, res) => {
-  try {
-    const queryStringParam = req.query;
-    console.log(queryStringParam);
-    const product = await getProductById(id);
-    return res.send({ success: true, product });
-  } catch (error) {
-    return res.status(400).send({ success: false, message: error.message });
-  }
-});
+// app.get("/api/product", async (req, res) => {
+//   try {
+//     const queryStringParam = req.query;
+//     console.log(queryStringParam);
+//     const product = await getProductById(id);
+//     return res.send({ success: true, product });
+//   } catch (error) {
+//     return res.status(400).send({ success: false, message: error.message });
+//   }
+// });
 
-app.put("/api/addToCart", async (req, res) => {
-  try {
-    const { product, username } = req.body;
-    await addProductToCart(product, username);
-    res.send({ success: true });
-  } catch (error) {
-    console.log(error);
-    return res.status(400).send({ success: false, message: error.message });
-  }
-});
-app.delete("/api/removeFromCart", async (req, res) => {
-  try {
-    const { product, username } = req.body;
-    await removeProductFromCart(product, username);
-    res.send({ success: true });
-  } catch (error) {
-    console.log(error);
-    return res.status(400).send({ success: false, message: error.message });
-  }
-});
+// app.put("/api/addToCart", async (req, res) => {
+//   try {
+//     const { product, username } = req.body;
+//     await addProductToCart(product, username);
+//     res.send({ success: true });
+//   } catch (error) {
+//     console.log(error);
+//     return res.status(400).send({ success: false, message: error.message });
+//   }
+// });
+// app.delete("/api/removeFromCart", async (req, res) => {
+//   try {
+//     const { product, username } = req.body;
+//     await removeProductFromCart(product, username);
+//     res.send({ success: true });
+//   } catch (error) {
+//     console.log(error);
+//     return res.status(400).send({ success: false, message: error.message });
+//   }
+// });
 app.delete("/api/orderPaid", async (req, res) => {
   try {
     const { username } = req.body;
@@ -96,10 +96,12 @@ app.delete("/api/orderPaid", async (req, res) => {
     return res.status(400).send({ success: false, message: error.message });
   }
 });
-app.get("/api/getCart", async (req, res) => {
+
+app.get("/api/getCart/:username", async (req, res) => {
   try {
-    const { username } = req.body;
-    const cart = await getCart(username);
+    const username = req.params;
+    console.log(username);
+    const cart = await getCart(username.username);
     res.send({ success: true, cart });
   } catch (error) {
     console.log(error);
@@ -111,4 +113,7 @@ const PORT = 3000;
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
-// getUserByEmail("or0548096690@gmail.com","Ii123456")
+
+// addUser("or0548096690@gmail.com", "username", "password")
+//   .then((res) => console.log(res))
+//   .catch((err) => console.log(err));

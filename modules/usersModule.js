@@ -4,7 +4,7 @@ const { getCollection, toObjectId } = require("./dbModule.js");
 
 const entity = "users";
 
-async function addUser(email, username, password, isAdmin = false) {
+async function addUser(email, username, password) {
   try {
     const collection = await getCollection(entity);
     const existUsername = await collection.findOne({ username });
@@ -14,22 +14,22 @@ async function addUser(email, username, password, isAdmin = false) {
     } else if (existUserEmail) {
       throw new Error("The email is already taken😢");
     }
-    await collection.insertOne({ username, password, email, isAdmin });
+    await collection.insertOne({ username, password, email, isAdmin: false });
     console.log(`User "${username}" have been added successfully`);
   } catch (error) {
-    console.log(error);
+    throw error;
   }
 }
 
-async function getUserByEmail(email,password) {
+async function getUserByEmail(email, passwordInput) {
   try {
     const collection = await getCollection(entity);
-    const user = await collection.findOne({ email:email,password:password });
-    if (!user) throw new Error("User not found😢");
-    const { userPassword, ...restUserDetails } = user;
+    const user = await collection.findOne({ email: email, password: passwordInput });
+    if (!user) throw new Error("Wrong email or password😢");
+    const { password, ...restUserDetails } = user;
     return restUserDetails;
   } catch (error) {
-    console.log(error);
+    throw error;
   }
 }
 

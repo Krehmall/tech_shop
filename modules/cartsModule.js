@@ -2,7 +2,7 @@
 // const { MongoClient, ObjectId } = require("mongodb");
 const { getCollection, toObjectId } = require("./dbModule.js");
 // const { getProductById, getProducts, updateProductStockBy, uniqueValuesByKey } = require("./productsModule.js");
-const { addUser, getUserByUsername } = require("./usersModule.js");
+const { addUser, getUserByEmail } = require("./usersModule.js");
 
 const entity = "carts";
 
@@ -64,11 +64,12 @@ async function getCart(cartUsername) {
 async function createCart(cartUsername) {
   try {
     const collection = await getCollection(entity);
-    if (!(await getUserByUsername(cartUsername))) {
-      throw new Error("There is no such a user!!!");
-    } else if (await getCart(cartUsername)) {
-      throw new Error("This user already have a cart!!!");
-    }
+    // const usersCollection = await getCollection("users");
+    // if (!(await usersCollection.findOne({ username: cartUsername }))) {
+    //   throw new Error("There is no such a user!!!");
+    // } else if (await getCart(cartUsername)) {
+    //   throw new Error("This user already have a cart!!!");
+    // }
     const emptyCart = {
       username: cartUsername,
       productsInCart: [],
