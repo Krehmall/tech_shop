@@ -11,21 +11,23 @@
         <h2 class="logo">Tech Shop</h2>
         <div>
             <label>Sort by: </label>
-            <select name="" id="">
-                <option value="">Name</option>
-                <option value="">Price</option>
-                <input>
-                <button>Sort</button>
+            <select name="sort" id="sort"onchange="refreshProducts(event)">
+                <option value="name">Name</option>
+                <option value="price">Price</option>
+                <!-- <button>Sort</button> -->
             </select>
+            <input type="text" id="search" placeholder="Search by name" oninput="refreshProducts(event)">
         </div>
 
         <nav class="nav_bar">
-            <select id="catagories" onchange="filterByCatagory(event)">
-                <option value="all">All</option>
-                <option value="tablet">Tablet</option>
-                <option value="laptop">Laptop</option>
-                <option value="pc">Pc</option>
-                <option value="Smartphone">Smartphone</option>
+            <select id="availability" onchange="refreshProducts(event)">
+                <option value="All">All</option>
+                <option value="Availbale">Availbale</option>
+                <option value="Not_Availbale">Not Availbale</option>
+            </select>
+            <select id="categories" onchange="refreshProducts(event)">
+            </select>
+            <select id="companies" onchange="refreshProducts(event)">
             </select>
             <button class="nav_btn">Cart</label>
             <button class="nav_btn" onclick="logOut()">Log Out</button>

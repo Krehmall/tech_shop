@@ -61,16 +61,13 @@ function logOut() {
   window.location.href = "/login.html";
 }
 
-function sort(event) {
-  alert("click");
-}
-
 async function init() {
   const user = storageService.getUser();
   if (!user) {
     window.location.href = "login.html";
     return;
   }
+  await filterBarsRender();
   let cart = storageService.getCart();
   if (!cart) {
     const response = await makeFetchRequest(`/api/getCart/${user.username}`);

@@ -3,6 +3,7 @@
 const USER_KEY = "loggedInUser";
 const PRODUCTS_KEY = "products";
 const CART_KEY = "cart";
+const ORDERS_KEY = "orders";
 
 const storageService = {
   getProducts() {
@@ -26,9 +27,17 @@ const storageService = {
   setCart(cart) {
     localStorage.setItem(CART_KEY, JSON.stringify(cart));
   },
+  getOrders() {
+    const orders = JSON.parse(localStorage.getItem(ORDERS_KEY));
+    return cart || null;
+  },
+  setOrders(orders) {
+    localStorage.setItem(CART_KEY, JSON.stringify(orders));
+  },
   clearAll() {
     localStorage.removeItem(USER_KEY);
     localStorage.removeItem(CART_KEY);
+    // localStorage.removeItem(ORDERS_KEY);
     localStorage.removeItem(PRODUCTS_KEY);
   },
 };

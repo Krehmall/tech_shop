@@ -13,30 +13,42 @@ async function getProductById(id) {
     console.log(error);
   }
 }
-async function getProducts(filterBy = null, value, sortBy = null) {
+async function getProducts() {
   try {
-    let filter = 0;
-    let sorter = 0;
-    if (typeof filterBy === "string") {
-      filter = JSON.parse(`{"${filterBy}":"${value}"}`);
-    } else {
-      filter = {};
-    }
-    if (typeof sortBy === "string") {
-      sorter = JSON.parse(`{"${sortBy}":1}`);
-    } else {
-      sorter = {};
-    }
     const collection = await getCollection(entity);
-    const products = await collection.find(filter).sort(sorter).toArray();
-    const message = `We got ${products.length} items sorted by ${sortBy} and filtered by "${filterBy}":"${value}" `;
-    console.log(message);
-    // console.log(products);
+    const products = await collection.find({}).toArray();
+    console.log(products);
+
     return products;
   } catch (error) {
     console.log(error);
   }
 }
+
+// async function getProducts(filterBy = null, value, sortBy = null) {
+//   try {
+//     let filter = 0;
+//     let sorter = 0;
+//     if (typeof filterBy === "string") {
+//       filter = JSON.parse(`{"${filterBy}":"${value}"}`);
+//     } else {
+//       filter = {};
+//     }
+//     if (typeof sortBy === "string") {
+//       sorter = JSON.parse(`{"${sortBy}":1}`);
+//     } else {
+//       sorter = {};
+//     }
+//     const collection = await getCollection(entity);
+//     const products = await collection.find(filter).sort(sorter).toArray();
+//     const message = `We got ${products.length} items sorted by ${sortBy} and filtered by "${filterBy}":"${value}" `;
+//     console.log(message);
+// console.log(products);
+//     return products;
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
 
 async function updateProductStockBy(productId, num) {
   try {

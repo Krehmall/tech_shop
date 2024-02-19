@@ -117,3 +117,10 @@ app.listen(PORT, () => {
 // addUser("or0548096690@gmail.com", "username", "password")
 //   .then((res) => console.log(res))
 //   .catch((err) => console.log(err));
+// var objs = [
+//   { first_nom: "Laszlo", last_nom: "Jamf" },
+//   { first_nom: "Pig", last_nom: "Bodine" },
+//   { first_nom: "Pirate", last_nom: "Prentice" },
+// ];
+// objs.sort((a, b) => (a.last_nom > b.last_nom ? 1 : b.last_nom > a.last_nom ? -1 : 0));
+// console.log(objs);
