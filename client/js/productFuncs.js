@@ -103,19 +103,8 @@ function renderProductList(products) {
       inStoc = "out of stock";
       colorTxt = "txt_red";
     }
-<<<<<<< HEAD
     return productsData(item.urlPic, item.name, item.description, item.price, inStoc, colorTxt, item.catagory);
-=======
-    return productsData(
-      item.urlPic,
-      item.name,
-      item.description,
-      item.price,
-      inStoc,
-      colorTxt,
-      item._id
-    );
->>>>>>> 0efe561c9ddb4a433fe28e9e0cc72f2530185278
+    return productsData(item.urlPic, item.name, item.description, item.price, inStoc, colorTxt, item._id);
   });
 
   document.querySelector("#products_list").innerHTML = htmlProducts.join("");
@@ -145,11 +134,8 @@ function cartData(img, pName, price, items, id) {
 
 function renderCartList(cart) {
   const htmlProducts = cart.productsInCart.map((item) => {
-<<<<<<< HEAD
     return cartData(item.urlPic, item.name, item.description, item.price, item.items);
-=======
     return cartData(item.urlPic, item.name, item.price, item.items, item._id);
->>>>>>> 0efe561c9ddb4a433fe28e9e0cc72f2530185278
   });
 
   document.querySelector("#cart_list").innerHTML = htmlProducts.join("");
