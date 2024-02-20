@@ -6,7 +6,41 @@
     <link rel="stylesheet" href="css/main.css">
     <title>Cart</title>
 </head>
-<body>
-    
+<body onload="cart_init()">
+    <div class="header_nav">
+        <h2 class="logo">Tech Shop</h2>
+        <div>
+            <label>Sort by: </label>
+            <select name="sort" id="sort"onchange="refreshProducts(event)">
+                <option value="name">Name</option>
+                <option value="price">Price</option>
+                <!-- <button>Sort</button> -->
+            </select>
+            <input type="text" id="search" placeholder="Search by name" oninput="refreshProducts(event)">
+        </div>
+
+        <nav class="nav_bar">
+            <select id="availability" onchange="refreshProducts(event)">
+                <option value="All">All</option>
+                <option value="Availbale">Availbale</option>
+                <option value="Not_Availbale">Not Availbale</option>
+            </select>
+            <select id="categories" onchange="refreshProducts(event)">
+            </select>
+            <select id="companies" onchange="refreshProducts(event)">
+            </select>
+            <button class="nav_btn" onclick="moveHome()">HOME</button>
+            <button class="nav_btn" onclick="logOut()">Log Out</button>
+        </nav>
+    </div>
+
+
+    <div class="content_cart">
+        <div class="cart_list" id="cart_list"></div>
+    </div>
+
+    <script src="js/storgeService.js"></script>
+    <script src="js/productFuncs.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>

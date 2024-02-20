@@ -129,7 +129,6 @@ form {
 
 .product{
     width: 200px;
-    height: 400px;
     display: flex;
     flex-direction:column;
     justify-content: space-between;
@@ -141,22 +140,26 @@ form {
 
 .img_product{
   width: 150px;
-  height: 150px;
+  align-self: center;
+  margin-bottom: 3px;
 }
 
 .p_name{
     font-weight: bold;
-    font-size: 18px;
+    font-size: 13px;
 }
 
 .p_description{
-    font-size: 15px;
+    font-size: 12px;
+    margin-top: 3px;
+    margin-bottom: 3px;
 }
 
 .p_price{
     font-weight: bold;
     font-size: 16px;
     text-align: center;
+    margin-bottom: 3px;
 }
 
 

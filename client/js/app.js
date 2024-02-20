@@ -1,6 +1,12 @@
 function validRegisterInfo(email, userName, password, confirmPassword) {
   let valid = true;
-  if (!email.includes("@") || userName === "" || password === "" || password.length < 3 || password !== confirmPassword) {
+  if (
+    !email.includes("@") ||
+    userName === "" ||
+    password === "" ||
+    password.length < 3 ||
+    password !== confirmPassword
+  ) {
     valid = false;
   }
   return valid;
@@ -19,14 +25,21 @@ async function login(event) {
     event.preventDefault();
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
-    const response = await makeFetchRequest("/api/login", "POST", { email, password });
+    const response = await makeFetchRequest("/api/login", "POST", {
+      email,
+      password,
+    });
     if (!response.success) {
       alert(response.message);
       return;
     }
     const loggedInUser = response.user;
     storageService.setUser(loggedInUser);
-    window.location.href = "/home.html";
+    if (loggedInUser.isAdmin === true) {
+      window.location.href = "/orders.html";
+    } else {
+      window.location.href = "/home.html";
+    }
   } catch (error) {
     console.log(error);
   }
@@ -44,7 +57,11 @@ async function register(event) {
       alert("Something wrong with your inputs!!!");
       return;
     }
-    const response = await makeFetchRequest("/api/register", "POST", { email, username, password });
+    const response = await makeFetchRequest("/api/register", "POST", {
+      email,
+      username,
+      password,
+    });
     if (!response.success) {
       alert(response.message);
       return;
@@ -60,6 +77,15 @@ function logOut() {
   storageService.clearAll();
   window.location.href = "/login.html";
 }
+function moveCart() {
+  window.location.href = "/cart.html";
+}
+
+function moveHome() {
+  window.location.href = "/home.html";
+}
+
+function addToCart() {}
 
 async function init() {
   const user = storageService.getUser();
@@ -81,4 +107,16 @@ async function init() {
     storageService.setProducts(products);
   }
   renderProductList(products);
+}
+
+async function cart_init() {
+  let cart = storageService.getCart();
+  if (!cart) {
+    const response = await makeFetchRequest(
+      `/api/getCart?username=${user.username}`
+    );
+    cart = response.cart;
+    storageService.setCart(cart);
+  }
+  renderCartList(cart);
 }

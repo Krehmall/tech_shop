@@ -34,7 +34,9 @@ function refreshProducts(event) {
 
 function sort(products) {
   const sortBy = document.querySelector("#sort").value;
-  const result = products.sort((a, b) => (a[sortBy] > b[sortBy] ? 1 : b[sortBy] > a[sortBy] ? -1 : 0));
+  const result = products.sort((a, b) =>
+    a[sortBy] > b[sortBy] ? 1 : b[sortBy] > a[sortBy] ? -1 : 0
+  );
   return result;
 }
 
@@ -72,6 +74,20 @@ function filterByCompany(products) {
   }
   return result;
 }
+// template for render products
+function productsData(img, pName, description, price, inStoc, txtColor) {
+  let productItem = `
+  <div class="product">
+  <img class="img_product" src="${img}">
+  <p class="p_name">${pName}</p>
+  <P class="p_description">${description}</P>
+  <p class=${txtColor}>${inStoc}</p>
+  <p class="p_price">${price}$</p>
+  <button class="btn_product" onclick="addToCart()">Add to cart</button>
+  </div>
+  `;
+  return productItem;
+}
 
 function renderProductList(products) {
   const filteredByCategory = filterByCategory(products);
@@ -89,8 +105,45 @@ function renderProductList(products) {
       inStoc = "out of stock";
       colorTxt = "txt_red";
     }
-    return productsData(item.urlPic, item.name, item.description, item.price, inStoc, colorTxt, item.catagory);
+    return productsData(
+      item.urlPic,
+      item.name,
+      item.description,
+      item.price,
+      inStoc,
+      colorTxt,
+      item.catagory
+    );
   });
 
   document.querySelector("#products_list").innerHTML = htmlProducts.join("");
+}
+
+// template for render cart products
+function cartData(img, pName, description, price) {
+  let cartItem = `
+  <div class="cart">
+  <img class="img_product" src="${img}">
+  <div>
+  <p class="c_name">${pName}</p>
+  <P class="c_description">${description}</P>
+  <p class="c_price">${price}</p>
+  </>
+  </div>
+  `;
+  return cartItem;
+}
+
+function renderCartList(cart) {
+  const htmlProducts = cart.map((item) => {
+    return cartData(
+      item.urlPic,
+      item.name,
+      item.description,
+      item.price,
+      item.catagory
+    );
+  });
+
+  document.querySelector("#cart_list").innerHTML = htmlProducts.join("");
 }
