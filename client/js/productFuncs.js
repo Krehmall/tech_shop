@@ -73,7 +73,7 @@ function filterByCompany(products) {
   return result;
 }
 // template for render products
-function productsData(img, pName, description, price, inStoc, txtColor) {
+function productsData(img, pName, description, price, inStoc, txtColor, id) {
   let productItem = `
   <div class="product">
   <img class="img_product" src="${img}">
@@ -81,7 +81,7 @@ function productsData(img, pName, description, price, inStoc, txtColor) {
   <P class="p_description">${description}</P>
   <p class=${txtColor}>${inStoc}</p>
   <p class="p_price">${price}$</p>
-  <button class="btn_product" onclick="addToCart()">Add to cart</button>
+  <button class="btn_product" onclick="addToCart('${id}')">Add to cart</button>
   </div>
   `;
   return productItem;
@@ -97,35 +97,46 @@ function renderProductList(products) {
     let inStoc = "";
     let colorTxt = "";
     if (item.isAvailable === true) {
-      inStoc = "in stok";
+      inStoc = "in stock";
       colorTxt = "txt_green";
     } else {
       inStoc = "out of stock";
       colorTxt = "txt_red";
     }
+<<<<<<< HEAD
     return productsData(item.urlPic, item.name, item.description, item.price, inStoc, colorTxt, item.catagory);
+=======
+    return productsData(
+      item.urlPic,
+      item.name,
+      item.description,
+      item.price,
+      inStoc,
+      colorTxt,
+      item._id
+    );
+>>>>>>> 0efe561c9ddb4a433fe28e9e0cc72f2530185278
   });
 
   document.querySelector("#products_list").innerHTML = htmlProducts.join("");
 }
 
 // template for render cart products
-function cartData(img, pName, description, price, items) {
+function cartData(img, pName, price, items, id) {
   let cartItem = `
   <div class="cart">
   <div>
   <img class="img_cart" src="${img}">
   </div>
-  <div>
+  <div class="cart_list_info>
   <p class="c_name">${pName}</p>
-  <P class="c_description">${description}</P>
   </div>
   <div class="cart_list_with_btns">
   <button>-</button>
   <p class="c_items">${items}</>
   <button>+</button>
   <p class="c_price">${price}$</p>
-  <button>Remove</button>
+  <button onclick="removeFromCart('${id}')">Remove</button>
   </div>
   </div>
   `;
@@ -134,7 +145,11 @@ function cartData(img, pName, description, price, items) {
 
 function renderCartList(cart) {
   const htmlProducts = cart.productsInCart.map((item) => {
+<<<<<<< HEAD
     return cartData(item.urlPic, item.name, item.description, item.price, item.items);
+=======
+    return cartData(item.urlPic, item.name, item.price, item.items, item._id);
+>>>>>>> 0efe561c9ddb4a433fe28e9e0cc72f2530185278
   });
 
   document.querySelector("#cart_list").innerHTML = htmlProducts.join("");

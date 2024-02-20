@@ -85,7 +85,23 @@ function moveHome() {
   window.location.href = "/home.html";
 }
 
-function addToCart() {}
+function addToCart(id) {
+  const productToAdd = storageService
+    .getProducts()
+    .filter((item) => item._id === id);
+
+  const cart = storageService.getCart();
+  cart.productsInCart.push(productToAdd[0]);
+  storageService.setCart(cart);
+}
+
+function removeFromCart(id) {
+  const cart = storageService.getCart();
+  const newCart = cart.productsInCart.filter((item) => item._id !== id);
+  cart.productsInCart = newCart;
+  storageService.setCart(cart);
+  renderCartList(cart);
+}
 
 async function init() {
   const user = storageService.getUser();
