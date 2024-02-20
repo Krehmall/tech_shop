@@ -112,11 +112,10 @@ async function init() {
 async function cart_init() {
   let cart = storageService.getCart();
   if (!cart) {
-    const response = await makeFetchRequest(
-      `/api/getCart?username=${user.username}`
-    );
+    const response = await makeFetchRequest(`/api/getCart/${user.username}`);
     cart = response.cart;
     storageService.setCart(cart);
   }
+
   renderCartList(cart);
 }

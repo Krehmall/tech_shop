@@ -120,28 +120,36 @@ function renderProductList(products) {
 }
 
 // template for render cart products
-function cartData(img, pName, description, price) {
+function cartData(img, pName, description, price, items) {
   let cartItem = `
   <div class="cart">
-  <img class="img_product" src="${img}">
+  <div>
+  <img class="img_cart" src="${img}">
+  </div>
   <div>
   <p class="c_name">${pName}</p>
   <P class="c_description">${description}</P>
-  <p class="c_price">${price}</p>
-  </>
+  </div>
+  <div class="cart_list_with_btns">
+  <button>-</button>
+  <p class="c_items">${items}</>
+  <button>+</button>
+  <p class="c_price">${price}$</p>
+  <button>Remove</button>
+  </div>
   </div>
   `;
   return cartItem;
 }
 
 function renderCartList(cart) {
-  const htmlProducts = cart.map((item) => {
+  const htmlProducts = cart.productsInCart.map((item) => {
     return cartData(
       item.urlPic,
       item.name,
       item.description,
       item.price,
-      item.catagory
+      item.items
     );
   });
 

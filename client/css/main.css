@@ -173,6 +173,89 @@ form {
     color: #317546;
   }
 
+  /*?-------cart product-------------*/
+
+  .content_cart{
+    display: flex;
+    flex-direction:column;
+    margin-top: 100px;
+    align-items: center;
+}
+
+.cart_list{
+    display: flex;
+    width: 50%;
+    flex-direction:column;
+    flex-wrap: wrap;
+    justify-content:center
+}
+
+.cart{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin: 2px;
+}
+
+.cart_list_with_btns{
+  display: flex;
+  width: 30%;
+  flex-direction: row;
+  align-self: center;
+}
+
+/* .cart_list_info{
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  width: 50%;
+} */
+
+.img_cart{
+  width: 50px;
+  align-self: center;
+  margin-right: 10px;
+}
+
+.c_name{
+    font-weight: bold;
+    font-size: 10px;
+    margin-bottom: 3px;
+}
+.c_description{
+  font-size: 10px;
+}
+
+.c_price{
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+    margin-left: 3px;
+    margin-right: 3px;
+    align-self: center;
+}
+
+.c_items{
+  font-weight: bold;
+  font-size: 10px;
+  margin-left: 3px;
+  margin-left: 3px;
+}
+
+.chackout{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin: 2px;
+  align-content: center;
+}
+
+
+
 
 
 /*?-------nav bar-------------*/
