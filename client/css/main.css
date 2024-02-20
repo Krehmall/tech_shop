@@ -221,11 +221,8 @@ form {
 
 .c_name{
     font-weight: bold;
-    font-size: 10px;
+    font-size: 9px;
     margin-bottom: 3px;
-}
-.c_description{
-  font-size: 10px;
 }
 
 .c_price{
