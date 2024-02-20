@@ -103,6 +103,26 @@ function removeFromCart(id) {
   renderCartList(cart);
 }
 
+function addSameProduct(id) {
+  const cart = storageService.getCart();
+  const newCart = cart.productsInCart.filter((item) => item._id === id);
+  // console.log(newCart);
+  // cart.productsInCart = newCart;
+  // storageService.setCart(cart);
+  // renderCartList(cart);
+}
+
+function totalPrice(cart) {
+  const totalPrice = cart.productsInCart.reduce((acc, product) => {
+    acc += product.price;
+    return acc;
+  }, 0);
+
+  document.querySelector(
+    ".total_price"
+  ).innerHTML = `Total Price  ${totalPrice}$`;
+}
+
 async function init() {
   const user = storageService.getUser();
   if (!user) {
@@ -134,4 +154,11 @@ async function cart_init() {
   }
 
   renderCartList(cart);
+}
+
+///chackout
+
+function chackout() {
+  cart = storageService.getCart();
+  console.log(cart);
 }

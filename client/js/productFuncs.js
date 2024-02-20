@@ -34,7 +34,9 @@ function refreshProducts(event) {
 
 function sort(products) {
   const sortBy = document.querySelector("#sort").value;
-  const result = products.sort((a, b) => (a[sortBy] > b[sortBy] ? 1 : b[sortBy] > a[sortBy] ? -1 : 0));
+  const result = products.sort((a, b) =>
+    a[sortBy] > b[sortBy] ? 1 : b[sortBy] > a[sortBy] ? -1 : 0
+  );
   return result;
 }
 
@@ -103,8 +105,16 @@ function renderProductList(products) {
       inStoc = "out of stock";
       colorTxt = "txt_red";
     }
-    return productsData(item.urlPic, item.name, item.description, item.price, inStoc, colorTxt, item.catagory);
-    return productsData(item.urlPic, item.name, item.description, item.price, inStoc, colorTxt, item._id);
+    //return productsData(item.urlPic, item.name, item.description, item.price, inStoc, colorTxt, item.catagory);
+    return productsData(
+      item.urlPic,
+      item.name,
+      item.description,
+      item.price,
+      inStoc,
+      colorTxt,
+      item._id
+    );
   });
 
   document.querySelector("#products_list").innerHTML = htmlProducts.join("");
@@ -122,8 +132,8 @@ function cartData(img, pName, price, items, id) {
   </div>
   <div class="cart_list_with_btns">
   <button>-</button>
-  <p class="c_items">${items}</>
-  <button>+</button>
+  <p class="c_items">${items}</p>
+  <button onclick="addSameProduct('${id}')" >+</button>
   <p class="c_price">${price}$</p>
   <button onclick="removeFromCart('${id}')">Remove</button>
   </div>
@@ -134,9 +144,12 @@ function cartData(img, pName, price, items, id) {
 
 function renderCartList(cart) {
   const htmlProducts = cart.productsInCart.map((item) => {
-    return cartData(item.urlPic, item.name, item.description, item.price, item.items);
+    if (item.items === undefined) {
+      item.items = 1;
+    }
     return cartData(item.urlPic, item.name, item.price, item.items, item._id);
   });
 
   document.querySelector("#cart_list").innerHTML = htmlProducts.join("");
+  totalPrice(cart);
 }
