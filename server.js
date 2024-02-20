@@ -4,8 +4,9 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const { addUser, getUserByEmail } = require("./modules/usersModule.js");
-const { getProductById, getProducts, updateProductStockBy, uniqueValuesByKey } = require("./modules/productsModule.js");
-const { addProductToCart, removeProductFromCart, getCart, createCart, clearCart } = require("./modules/cartsModule.js");
+const { getProducts, uniqueValuesByKey } = require("./modules/productsModule.js");
+const { refreshCart, getCart, createCart, clearCart } = require("./modules/cartsModule.js");
+const { addOrder, getOrders } = require("./modules/ordersModule.js");
 
 app.use(express.static("client"));
 app.use(express.json());
@@ -46,8 +47,8 @@ app.post("/api/register", async (req, res) => {
 
 app.get("/api/products", async (req, res) => {
   try {
-    const queryStringParam = req.query;
-    console.log(queryStringParam);
+    // const queryStringParam = req.query;
+    // console.log(queryStringParam);
     const products = await getProducts();
     return res.send({ success: true, products });
   } catch (error) {
@@ -55,41 +56,31 @@ app.get("/api/products", async (req, res) => {
   }
 });
 
-// app.get("/api/product", async (req, res) => {
-//   try {
-//     const queryStringParam = req.query;
-//     console.log(queryStringParam);
-//     const product = await getProductById(id);
-//     return res.send({ success: true, product });
-//   } catch (error) {
-//     return res.status(400).send({ success: false, message: error.message });
-//   }
-// });
-
-// app.put("/api/addToCart", async (req, res) => {
-//   try {
-//     const { product, username } = req.body;
-//     await addProductToCart(product, username);
-//     res.send({ success: true });
-//   } catch (error) {
-//     console.log(error);
-//     return res.status(400).send({ success: false, message: error.message });
-//   }
-// });
-// app.delete("/api/removeFromCart", async (req, res) => {
-//   try {
-//     const { product, username } = req.body;
-//     await removeProductFromCart(product, username);
-//     res.send({ success: true });
-//   } catch (error) {
-//     console.log(error);
-//     return res.status(400).send({ success: false, message: error.message });
-//   }
-// });
-app.delete("/api/orderPaid", async (req, res) => {
+app.get("/api/orders", async (req, res) => {
   try {
-    const { username } = req.body;
-    await clearCart(username);
+    const orders = await getOrders();
+    return res.send({ success: true, orders });
+  } catch (error) {
+    return res.status(400).send({ success: false, message: error.message });
+  }
+});
+
+app.put("/api/refreshCart", async (req, res) => {
+  try {
+    const { products, username } = req.body;
+    await refreshCart(products, username);
+    res.send({ success: true });
+  } catch (error) {
+    console.log(error);
+    return res.status(400).send({ success: false, message: error.message });
+  }
+});
+
+app.post("/api/orderPaid", async (req, res) => {
+  try {
+    const { cart } = req.body;
+    await addOrder(cart);
+    await clearCart(cart.username);
     res.send({ success: true });
   } catch (error) {
     console.log(error);

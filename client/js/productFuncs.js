@@ -34,9 +34,7 @@ function refreshProducts(event) {
 
 function sort(products) {
   const sortBy = document.querySelector("#sort").value;
-  const result = products.sort((a, b) =>
-    a[sortBy] > b[sortBy] ? 1 : b[sortBy] > a[sortBy] ? -1 : 0
-  );
+  const result = products.sort((a, b) => (a[sortBy] > b[sortBy] ? 1 : b[sortBy] > a[sortBy] ? -1 : 0));
   return result;
 }
 
@@ -105,15 +103,7 @@ function renderProductList(products) {
       inStoc = "out of stock";
       colorTxt = "txt_red";
     }
-    return productsData(
-      item.urlPic,
-      item.name,
-      item.description,
-      item.price,
-      inStoc,
-      colorTxt,
-      item.catagory
-    );
+    return productsData(item.urlPic, item.name, item.description, item.price, inStoc, colorTxt, item.catagory);
   });
 
   document.querySelector("#products_list").innerHTML = htmlProducts.join("");
@@ -144,13 +134,7 @@ function cartData(img, pName, description, price, items) {
 
 function renderCartList(cart) {
   const htmlProducts = cart.productsInCart.map((item) => {
-    return cartData(
-      item.urlPic,
-      item.name,
-      item.description,
-      item.price,
-      item.items
-    );
+    return cartData(item.urlPic, item.name, item.description, item.price, item.items);
   });
 
   document.querySelector("#cart_list").innerHTML = htmlProducts.join("");
