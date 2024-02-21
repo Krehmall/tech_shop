@@ -144,12 +144,50 @@ function cartData(img, pName, price, items, id) {
 
 function renderCartList(cart) {
   const htmlProducts = cart.productsInCart.map((item) => {
-    if (item.items === undefined) {
-      item.items = 1;
-    }
+    //----------------------------------------------
+    // if (item.items === undefined) {
+    //   item.items = 1;
+    // }
+    //----------------------------------------------
     return cartData(item.urlPic, item.name, item.price, item.items, item._id);
   });
 
   document.querySelector("#cart_list").innerHTML = htmlProducts.join("");
   totalPrice(cart);
+}
+
+//order rendr
+// template for render order products
+function orderData(img, pName, items) {
+  let orderItem = `
+  <div class="cart">
+  <div>
+  <img class="img_cart" src="${img}">
+  </div>
+  <div class="cart_list_info>
+  <p class="c_name">${pName}</p>
+  <p class="c_items">${items}</p>
+  </div>
+  </div>
+  `;
+  return orderItem;
+}
+
+function userData(username) {
+  let userItem = `<div>
+  <p>${username}</p>
+
+  <div class="userMainDiv"><div>
+
+  </div>`;
+
+  return userItem;
+}
+
+function renderOrderList(order) {
+  const htmlProducts = cart.productsInCart.map((item) => {
+    return orderData(item.urlPic, item.name, item.price, item.items, item._id);
+  });
+
+  document.querySelector("#order_list").innerHTML = htmlProducts.join("");
 }

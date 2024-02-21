@@ -91,8 +91,20 @@ function addToCart(id) {
     .filter((item) => item._id === id);
 
   const cart = storageService.getCart();
-  cart.productsInCart.push(productToAdd[0]);
-  storageService.setCart(cart);
+  const isInCart = cart.productsInCart.filter((item) => item._id === id);
+  if (isInCart.length === 0) {
+    cart.productsInCart.push(productToAdd[0]);
+    storageService.setCart(cart);
+  } else {
+    alert("The product is already in the shopping cart");
+  }
+  init();
+}
+
+function numProductInCart() {
+  const cart = storageService.getCart();
+  len = cart.productsInCart.length;
+  return len;
 }
 
 function removeFromCart(id) {
@@ -105,11 +117,11 @@ function removeFromCart(id) {
 
 function addSameProduct(id) {
   const cart = storageService.getCart();
-  const newCart = cart.productsInCart.filter((item) => item._id === id);
-  // console.log(newCart);
-  // cart.productsInCart = newCart;
-  // storageService.setCart(cart);
-  // renderCartList(cart);
+  const updataCart = cart.productsInCart.filter((item) => item._id === id);
+  console.log(updataCart[0]);
+  console.log(cart);
+
+  renderCartList(cart);
 }
 
 function totalPrice(cart) {
@@ -129,6 +141,9 @@ async function init() {
     window.location.href = "login.html";
     return;
   }
+  document.querySelector(
+    "#display_username"
+  ).innerHTML = `Welcome  ${user.username}`;
   await filterBarsRender();
   let cart = storageService.getCart();
   if (!cart) {
@@ -142,6 +157,7 @@ async function init() {
     products = response.products;
     storageService.setProducts(products);
   }
+  document.querySelector("#cart_btn").innerHTML = `Cart ${numProductInCart()}`;
   renderProductList(products);
 }
 
@@ -149,16 +165,26 @@ async function cart_init() {
   let cart = storageService.getCart();
   if (!cart) {
     const response = await makeFetchRequest(`/api/getCart/${user.username}`);
-    cart = response.cart;
+    cart = response.cart.numProductInCart;
     storageService.setCart(cart);
   }
-
   renderCartList(cart);
 }
 
 ///chackout
 
-function chackout() {
-  cart = storageService.getCart();
-  console.log(cart);
+async function chackout() {
+  const cart = storageService.getCart();
+  await makeFetchRequest("/api/orderPaid", "POST", { cart });
+}
+
+//order list
+async function ordersListInit() {
+  // let cart = storageService.getCart();
+  // if (!cart) {
+  //   const response = await makeFetchRequest(`/api/getCart/${user.username}`);
+  //   cart = response.cart.numProductInCart;
+  //   storageService.setCart(cart);
+  // }
+  // renderCartList(cart);
 }

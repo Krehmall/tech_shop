@@ -9,6 +9,7 @@
 <body onload="init()">
     <div class="header_nav">
         <h2 class="logo">Tech Shop</h2>
+        <p id="display_username"></p>
         <div>
             <label>Sort by: </label>
             <select name="sort" id="sort"onchange="refreshProducts(event)">
@@ -29,7 +30,7 @@
             </select>
             <select id="companies" onchange="refreshProducts(event)">
             </select>
-            <button class="nav_btn" onclick="moveCart()">Cart</button>
+            <button class="nav_btn" onclick="moveCart()" id="cart_btn">Cart</button>
             <button class="nav_btn" onclick="logOut()">Log Out</button>
         </nav>
     </div>
