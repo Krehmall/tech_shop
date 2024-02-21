@@ -71,58 +71,13 @@ function logOut() {
   storageService.clearAll();
   window.location.href = "/login.html";
 }
+
 function moveCart() {
   window.location.href = "/cart.html";
 }
 
 function moveHome() {
   window.location.href = "/home.html";
-}
-
-function addToCart(id) {
-  const productToAdd = storageService.getProducts().filter((item) => item._id === id);
-
-  const cart = storageService.getCart();
-  const isInCart = cart.productsInCart.filter((item) => item._id === id);
-  if (isInCart.length === 0) {
-    cart.productsInCart.push(productToAdd[0]);
-    storageService.setCart(cart);
-  } else {
-    alert("The product is already in the shopping cart");
-  }
-  init();
-}
-
-function numProductInCart() {
-  const cart = storageService.getCart();
-  len = cart.productsInCart.length;
-  return len;
-}
-
-function removeFromCart(id) {
-  const cart = storageService.getCart();
-  const newCart = cart.productsInCart.filter((item) => item._id !== id);
-  cart.productsInCart = newCart;
-  storageService.setCart(cart);
-  renderCartList(cart);
-}
-
-function addSameProduct(id) {
-  const cart = storageService.getCart();
-  const updataCart = cart.productsInCart.filter((item) => item._id === id);
-  console.log(updataCart[0]);
-  console.log(cart);
-
-  renderCartList(cart);
-}
-
-function totalPrice(cart) {
-  const totalPrice = cart.productsInCart.reduce((acc, product) => {
-    acc += product.price;
-    return acc;
-  }, 0);
-
-  document.querySelector(".total_price").innerHTML = `Total Price  ${totalPrice}$`;
 }
 
 async function init() {
@@ -145,7 +100,7 @@ async function init() {
     products = response.products;
     storageService.setProducts(products);
   }
-  document.querySelector("#cart_btn").innerHTML = `Cart ${numProductInCart()}`;
+  totalItemsInCartRender(cart);
   renderProductList(products);
 }
 
@@ -159,34 +114,14 @@ async function cart_init() {
   renderCartList(cart);
 }
 
-///chackout
-
-async function chackout() {
-  const cart = storageService.getCart();
-  await makeFetchRequest("/api/orderPaid", "POST", { cart });
-}
-
-//order list
 // async function ordersListInit() {
-// let cart = storageService.getCart();
-// if (!cart) {
-//   const response = await makeFetchRequest(`/api/getCart/${user.username}`);
-//   cart = response.cart.numProductInCart;
-//   storageService.setCart(cart);
+//   let order = storageService.getOrders();
+//   if (!order) {
+//     const response = await makeFetchRequest("/api/orders");
+//     console.log(response);
+//     order = response.orders;
+//     console.log(order);
+//     storageService.setOrders(order);
+//   }
+//   console.log(order);
 // }
-// renderCartList(cart);
-// }
-
-async function ordersListInit() {
-  let order = storageService.getOrders();
-  if (!order) {
-    const response = await makeFetchRequest("/api/orders");
-    console.log(response);
-    order = response.orders;
-    console.log(order);
-    storageService.setOrders(order);
-  }
-  console.log(order);
-}
-
-ordersListInit();

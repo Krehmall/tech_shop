@@ -90,7 +90,6 @@ async function createCart(cartUsername) {
 async function clearCart(cartUsername) {
   try {
     const collection = await getCollection(entity);
-    // const userCart = await getCart(cartUsername);
     await collection.updateOne({ username: cartUsername }, { $set: { productsInCart: [] } });
     console.log(`A cart has been cleared for a user "${cartUsername}"`);
   } catch (error) {
