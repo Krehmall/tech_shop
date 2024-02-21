@@ -29,7 +29,7 @@ const storageService = {
   },
   getOrders() {
     const orders = JSON.parse(localStorage.getItem(ORDERS_KEY));
-    return cart || null;
+    return orders || null;
   },
   setOrders(orders) {
     localStorage.setItem(CART_KEY, JSON.stringify(orders));

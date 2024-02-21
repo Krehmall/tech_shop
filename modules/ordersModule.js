@@ -16,7 +16,7 @@ async function addOrder(cart) {
 async function getOrders() {
   try {
     const collection = await getCollection(entity);
-    const orders = await collection.find({});
+    const orders = await collection.find({}).toArray();
     return orders;
   } catch (error) {
     console.log(error);

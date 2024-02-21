@@ -1,12 +1,6 @@
 function validRegisterInfo(email, userName, password, confirmPassword) {
   let valid = true;
-  if (
-    !email.includes("@") ||
-    userName === "" ||
-    password === "" ||
-    password.length < 3 ||
-    password !== confirmPassword
-  ) {
+  if (!email.includes("@") || userName === "" || password === "" || password.length < 3 || password !== confirmPassword) {
     valid = false;
   }
   return valid;
@@ -86,9 +80,7 @@ function moveHome() {
 }
 
 function addToCart(id) {
-  const productToAdd = storageService
-    .getProducts()
-    .filter((item) => item._id === id);
+  const productToAdd = storageService.getProducts().filter((item) => item._id === id);
 
   const cart = storageService.getCart();
   const isInCart = cart.productsInCart.filter((item) => item._id === id);
@@ -130,9 +122,7 @@ function totalPrice(cart) {
     return acc;
   }, 0);
 
-  document.querySelector(
-    ".total_price"
-  ).innerHTML = `Total Price  ${totalPrice}$`;
+  document.querySelector(".total_price").innerHTML = `Total Price  ${totalPrice}$`;
 }
 
 async function init() {
@@ -141,9 +131,7 @@ async function init() {
     window.location.href = "login.html";
     return;
   }
-  document.querySelector(
-    "#display_username"
-  ).innerHTML = `Welcome  ${user.username}`;
+  document.querySelector("#display_username").innerHTML = `Welcome  ${user.username}`;
   await filterBarsRender();
   let cart = storageService.getCart();
   if (!cart) {
@@ -179,12 +167,26 @@ async function chackout() {
 }
 
 //order list
+// async function ordersListInit() {
+// let cart = storageService.getCart();
+// if (!cart) {
+//   const response = await makeFetchRequest(`/api/getCart/${user.username}`);
+//   cart = response.cart.numProductInCart;
+//   storageService.setCart(cart);
+// }
+// renderCartList(cart);
+// }
+
 async function ordersListInit() {
-  // let cart = storageService.getCart();
-  // if (!cart) {
-  //   const response = await makeFetchRequest(`/api/getCart/${user.username}`);
-  //   cart = response.cart.numProductInCart;
-  //   storageService.setCart(cart);
-  // }
-  // renderCartList(cart);
+  let order = storageService.getOrders();
+  if (!order) {
+    const response = await makeFetchRequest("/api/orders");
+    console.log(response);
+    order = response.orders;
+    console.log(order);
+    storageService.setOrders(order);
+  }
+  console.log(order);
 }
+
+ordersListInit();

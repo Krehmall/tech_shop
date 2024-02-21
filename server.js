@@ -105,7 +105,7 @@ app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
 
-// addUser("or0548096690@gmail.com", "username", "password")
+// getOrders()
 //   .then((res) => console.log(res))
 //   .catch((err) => console.log(err));
 // var objs = [
