@@ -312,6 +312,25 @@ h2{
     margin-left: 40px;
 }
 
+.users_orders{
+  width: 50%;
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin: 2px;
+}
+
+.order_list{
+  display: flex;
+  flex-direction:column;
+  margin-top: 100px;
+  align-items: center;  
+}
+
+
+
 
 
 

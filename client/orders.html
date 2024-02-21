@@ -6,21 +6,19 @@
     <link rel="stylesheet" href="css/main.css">
     <title>orders</title>
 </head>
-<body onload="ordersListInit">
+<body onload="ordersListInit()">
     <div class="header_nav">
         <h2 class="logo">Tech Shop</h2>
         <nav class="nav_bar">
             <button class="nav_btn" onclick="logOut()">Log Out</button>
         </nav>
-
-        <div class="orser_list" id="order_list">
-
-        </div>
-
     </div>
+
+    <div class="order_list" id="order_list"></div>
+
+    <script src="js/storgeService.js"></script>
+    <script src="js/productFuncs.js"></script>
     <script src="js/itzchak.js"></script>
-
-
     
 </body>
 </html>
