@@ -36,10 +36,10 @@ function userData(username, id) {
     <div>
     <p>Username: ${username}</p>
     </div>
+    <div id="${id}" name ="Closed"></div>
     <div>
     <button onclick="showOrderProduct('${username}')">Show products</button>
     </div>
-    <div id="${id}" name ="Closed"></div>
     </div>`;
 
   return userItem;
