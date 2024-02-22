@@ -27,9 +27,8 @@ async function login(event) {
       alert(response.message);
       return;
     }
-    const loggedInUser = response.user;
-    storageService.setUser(loggedInUser);
-    if (loggedInUser.isAdmin === true) {
+    storageService.setUser(response.user);
+    if (response.user.isAdmin === true) {
       window.location.href = "/orders.html";
     } else {
       window.location.href = "/home.html";
@@ -67,7 +66,14 @@ async function register(event) {
   }
 }
 
-function logOut() {
+async function logOut() {
+  const user = storageService.getUser();
+  if (!user.isAdmin) {
+    const cart = storageService.getCart();
+    const products = cart.productsInCart;
+    const username = cart.username;
+    await makeFetchRequest("/api/refreshCart", "PUT", { products, username });
+  }
   storageService.clearAll();
   window.location.href = "/login.html";
 }
@@ -114,14 +120,18 @@ async function cart_init() {
   renderCartList(cart);
 }
 
-// async function ordersListInit() {
-//   let order = storageService.getOrders();
-//   if (!order) {
-//     const response = await makeFetchRequest("/api/orders");
-//     console.log(response);
-//     order = response.orders;
-//     console.log(order);
-//     storageService.setOrders(order);
-//   }
-//   console.log(order);
-// }
+async function orders_list_init() {
+  const user = storageService.getUser();
+  if (!user || !user.isAdmin) {
+    window.location.href = "login.html";
+    return;
+  }
+  let ordersList = storageService.getOrders();
+  if (!ordersList) {
+    const response = await makeFetchRequest("/api/orders");
+    ordersList = response.orders;
+    storageService.setOrders(ordersList);
+  }
+
+  renderOrderByUserList(ordersList);
+}

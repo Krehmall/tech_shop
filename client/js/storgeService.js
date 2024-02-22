@@ -27,17 +27,20 @@ const storageService = {
   setCart(cart) {
     localStorage.setItem(CART_KEY, JSON.stringify(cart));
   },
+  clearCart() {
+    localStorage.removeItem(CART_KEY);
+  },
   getOrders() {
     const orders = JSON.parse(localStorage.getItem(ORDERS_KEY));
     return orders || null;
   },
   setOrders(orders) {
-    localStorage.setItem(CART_KEY, JSON.stringify(orders));
+    localStorage.setItem(ORDERS_KEY, JSON.stringify(orders));
   },
   clearAll() {
     localStorage.removeItem(USER_KEY);
     localStorage.removeItem(CART_KEY);
-    // localStorage.removeItem(ORDERS_KEY);
+    localStorage.removeItem(ORDERS_KEY);
     localStorage.removeItem(PRODUCTS_KEY);
   },
 };

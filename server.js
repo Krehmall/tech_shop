@@ -47,8 +47,6 @@ app.post("/api/register", async (req, res) => {
 
 app.get("/api/products", async (req, res) => {
   try {
-    // const queryStringParam = req.query;
-    // console.log(queryStringParam);
     const products = await getProducts();
     return res.send({ success: true, products });
   } catch (error) {
@@ -104,14 +102,3 @@ const PORT = 3000;
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
-
-// getOrders()
-//   .then((res) => console.log(res))
-//   .catch((err) => console.log(err));
-// var objs = [
-//   { first_nom: "Laszlo", last_nom: "Jamf" },
-//   { first_nom: "Pig", last_nom: "Bodine" },
-//   { first_nom: "Pirate", last_nom: "Prentice" },
-// ];
-// objs.sort((a, b) => (a.last_nom > b.last_nom ? 1 : b.last_nom > a.last_nom ? -1 : 0));
-// console.log(objs);

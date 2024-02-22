@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
     <title>orders</title>
-</head>
-<body onload="ordersListInit()">
+  </head>
+  <body onload="orders_list_init()">
     <div class="header_nav">
-        <h2 class="logo">Tech Shop</h2>
-        <nav class="nav_bar">
-            <button class="nav_btn" onclick="logOut()">Log Out</button>
-        </nav>
+      <h2 class="logo">Tech Shop</h2>
+      <nav class="nav_bar">
+        <button class="nav_btn" onclick="logOut()">Log Out</button>
+      </nav>
     </div>
 
     <div class="order_list" id="order_list"></div>
 
     <script src="js/storgeService.js"></script>
     <script src="js/productFuncs.js"></script>
-    <script src="js/itzchak.js"></script>
-    
-</body>
+    <script src="js/ordersFuncs.js"></script>
+    <script src="js/app.js"></script>
+  </body>
 </html>

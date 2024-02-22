@@ -1,15 +1,22 @@
 async function checkout() {
   const cart = storageService.getCart();
-  await makeFetchRequest("/api/orderPaid", "POST", { cart });
+  if (totalPrice(cart) === 0) {
+    alert("There is no items in cart to buy!!!");
+  } else {
+    storageService.clearCart();
+    await makeFetchRequest("/api/orderPaid", "POST", { cart });
+    alert("The order has been paid");
+    window.location.href = "/home.html";
+  }
 }
 
 function totalPrice(cart) {
   const totalPrice = cart.productsInCart.reduce((acc, product) => {
-    acc += product.price;
+    acc += product.price * product.items;
     return acc;
   }, 0);
-
   document.querySelector(".total_price").innerHTML = `Total Price  ${totalPrice}$`;
+  return totalPrice;
 }
 function cartData(img, pName, price, items, id) {
   let cartItem = `
@@ -21,7 +28,7 @@ function cartData(img, pName, price, items, id) {
   <p class="c_name">${pName}</p>
   </div>
   <div class="cart_list_with_btns">
-  <button>-</button>
+  <button onclick="lessSameProduct('${id}')">-</button>
   <p class="c_items">${items}</p>
   <button onclick="addSameProduct('${id}')" >+</button>
   <p class="c_price">${price}$</p>
@@ -33,14 +40,8 @@ function cartData(img, pName, price, items, id) {
 }
 function renderCartList(cart) {
   const htmlProducts = cart.productsInCart.map((item) => {
-    //----------------------------------------------
-    // if (item.items === undefined) {
-    //   item.items = 1;
-    // }
-    //----------------------------------------------
     return cartData(item.urlPic, item.name, item.price, item.items, item._id);
   });
-
   document.querySelector("#cart_list").innerHTML = htmlProducts.join("");
   totalPrice(cart);
 }
@@ -55,20 +56,34 @@ function removeFromCart(id) {
 
 function addSameProduct(id) {
   const cart = storageService.getCart();
-  const updataCart = cart.productsInCart.filter((item) => item._id === id);
-  console.log(updataCart[0]);
-  console.log(cart);
+  const item = cart.productsInCart.find((item) => item._id === id);
+  const index = cart.productsInCart.indexOf(item);
+  cart.productsInCart[index].items++;
+  storageService.setCart(cart);
   renderCartList(cart);
 }
 
+function lessSameProduct(id) {
+  const cart = storageService.getCart();
+  const item = cart.productsInCart.find((item) => item._id === id);
+  const index = cart.productsInCart.indexOf(item);
+  cart.productsInCart[index].items--;
+  if (cart.productsInCart[index].items === 0) {
+    removeFromCart(id);
+  } else {
+    storageService.setCart(cart);
+    renderCartList(cart);
+  }
+}
+
 function addToCart(id) {
-  const productToAdd = storageService.getProducts().find((item) => item._id === id);
   const cart = storageService.getCart();
   const isInCart = cart.productsInCart.find((item) => item._id === id);
   if (isInCart) {
     const index = cart.productsInCart.indexOf(isInCart);
     cart.productsInCart[index].items++;
   } else {
+    const productToAdd = storageService.getProducts().find((item) => item._id === id);
     productToAdd.items = 1;
     cart.productsInCart.push(productToAdd);
   }
