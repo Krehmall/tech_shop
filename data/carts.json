@@ -1,0 +1,43 @@
+[
+  {
+    "username": "freeman",
+    "productsInCart": [
+      {
+        "_id": "65cb8d2a009c93a327a2da98",
+        "name": "Apple iPhone 14 256GB - blue color - one year warranty official importer - without charger and without headphones",
+        "price": 3599,
+        "category": "Cellphones",
+        "isAvailable": true,
+        "description": "The powerful iPhone 14 from Apple, with a 6.1 inch Super Retina XDR OLED screen, with a facial recognition sensor, an A15 Bionic main processor, a pair of 12 megapixel rear cameras, a 12 megapixel selfie camera, wireless charging option and support for the fifth generation 5G network.",
+        "urlPic": "https://img.ksp.co.il/item/226956/b_7.jpg?v=5",
+        "stock": 85,
+        "companyName": "Apple",
+        "items": 1
+      },
+      {
+        "_id": "65cb8d2a009c93a327a2daa9",
+        "name": "Apple iPad 2022 10.9'' 64GB WiFi - silver color",
+        "price": 1749,
+        "category": "Tablets",
+        "isAvailable": true,
+        "description": "The iPad from Apple is powerful and lightweight, with a 10.9'' Liquid Retina IPS LCD display, a powerful A14 Bionic processor, a wide 12 megapixel rear camera + a 12 megapixel ultra wide selfie camera and a wide variety of advanced features.",
+        "urlPic": "https://img.ksp.co.il/item/230589/b_1.jpg?v=5",
+        "stock": 53,
+        "companyName": "Apple",
+        "items": 1
+      }
+    ]
+  },
+  {
+    "username": "adikk",
+    "productsInCart": []
+  },
+  {
+    "username": "qwe",
+    "productsInCart": []
+  },
+  {
+    "username": "rusik",
+    "productsInCart": []
+  }
+]
