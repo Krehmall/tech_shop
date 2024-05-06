@@ -3,13 +3,16 @@ dotenv.config();
 const express = require("express");
 const app = express();
 const path = require("path");
-const { addUser, getUserByEmail } = require("./modules/usersModule.js");
-const { getProducts, uniqueValuesByKey } = require("./modules/productsModule.js");
-const { refreshCart, getCart, createCart, clearCart } = require("./modules/cartsModule.js");
+const { addUser, getUserByEmail, initUsers } = require("./modules/usersModule.js");
+const { getProducts, uniqueValuesByKey, initProducts } = require("./modules/productsModule.js");
+const { refreshCart, getCart, createCart, clearCart, initCarts } = require("./modules/cartsModule.js");
 const { addOrder, getOrders } = require("./modules/ordersModule.js");
 
 app.use(express.static("client"));
 app.use(express.json());
+initUsers();
+initProducts();
+initCarts();
 
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "client", "login.html"));

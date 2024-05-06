@@ -1,6 +1,10 @@
 "use strict";
 
-const { getCollection, toObjectId } = require("./dbModule.js");
+const fs = require("fs");
+const path = require("path");
+const PATH_TO_JSON_FILE = path.join(__dirname, "../data/users.json");
+
+const { getCollection } = require("./dbModule.js");
 
 const entity = "users";
 
@@ -33,17 +37,17 @@ async function getUserByEmail(email, passwordInput) {
   }
 }
 
-// async function updatePassword(username, newPassword) {
-//   try {
-//     const collection = await getCollection(entity);
-//     await collection.updateOne(
-//       { username: username },
-//       { $set: { password: newPassword } }
-//     );
-//     console.log(`User "${username}" have been changed password successfully`);
-//   } catch (error) {
-//     console.log(error);
-//   }
-// }
+async function initUsers() {
+  try {
+    const collection = await getCollection(entity);
+    const users = await collection.find({}).toArray();
+    if (users.length === 0) {
+      const content = fs.readFileSync(PATH_TO_JSON_FILE, "utf-8");
+      await collection.insertMany(JSON.parse(content));
+    }
+  } catch (error) {
+    console.log(error);
+  }
+}
 
-module.exports = { addUser, getUserByEmail };
+module.exports = { addUser, getUserByEmail, initUsers };

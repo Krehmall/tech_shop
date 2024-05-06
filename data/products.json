@@ -1,0 +1,1002 @@
+[
+  {
+    "name": "Logitech MX Master 2S wireless mouse - black color",
+    "price": 249,
+    "category": "Mouses",
+    "isAvailable": false,
+    "description": "A wireless mouse from Logitech allows you to navigate smoothly with a laser sensor that allows work on almost any surface.",
+    "urlPic": "https://img.ksp.co.il/item/290531/b_4.jpg?v=5",
+    "stock": 0,
+    "companyName": "Logitech"
+  },
+  {
+    "name": "Logitech G PRO X Superlight 2 wireless gaming mouse - white color",
+    "price": 689,
+    "category": "Mouses",
+    "isAvailable": true,
+    "description": "The next evolution of the championship winning mouse. Meet the new weapon of choice for the world's top eSports players.",
+    "urlPic": "https://img.ksp.co.il/item/276681/b_1.jpg?v=5",
+    "stock": 93,
+    "companyName": "Logitech"
+  },
+  {
+    "name": "Logitech G502 X Plus RGB wireless gaming mouse - black color",
+    "price": 679,
+    "category": "Mouses",
+    "isAvailable": true,
+    "description": "G502 X PLUS is the latest addition to the legendary G502 line. Reinvented with Logitech's first LIGHTFORCE hybrid switches, professional LIGHTSPEED wireless connectivity, LIGHTSYNC RGB and HERO 25K sensor.",
+    "urlPic": "https://img.ksp.co.il/item/228512/b_1.jpg?v=5",
+    "stock": 28,
+    "companyName": "Logitech"
+  },
+  {
+    "name": "Logitech G502 X Plus RGB wireless gaming mouse - white color",
+    "price": 679,
+    "category": "Mouses",
+    "isAvailable": false,
+    "description": "G502 X PLUS is the latest addition to the legendary G502 line. Reinvented with Logitech's first LIGHTFORCE hybrid switches, professional LIGHTSPEED wireless connectivity, LIGHTSYNC RGB and HERO 25K sensor.",
+    "urlPic": "https://img.ksp.co.il/item/228526/b_1.jpg?v=5",
+    "stock": 0,
+    "companyName": "Logitech"
+  },
+  {
+    "name": "Logitech G PRO X Superlight 2 wireless gaming mouse - black color",
+    "price": 689,
+    "category": "Mouses",
+    "isAvailable": true,
+    "description": "The next evolution of the championship winning mouse. Meet the new weapon of choice for the world's top eSports players.",
+    "urlPic": "https://img.ksp.co.il/item/276667/b_1.jpg?v=5",
+    "stock": 36,
+    "companyName": "Logitech"
+  },
+  {
+    "name": "SteelSeries Aerox 9 Ultra Lightweight wireless gaming mouse - black color",
+    "price": 832,
+    "category": "Mouses",
+    "isAvailable": false,
+    "description": "Aerox 9 wireless gaming mouse from SteelSeries",
+    "urlPic": "https://img.ksp.co.il/item/210241/b_1.jpg?v=5",
+    "stock": 0,
+    "companyName": "SteelSeries"
+  },
+  {
+    "name": "Roccat Kone Air wireless gaming mouse - black color",
+    "price": 219,
+    "category": "Mouses",
+    "isAvailable": true,
+    "description": "A gaming mouse from Roccat with a long battery life, ergonomic design, optical switches and an optical sensor with a resolution of 19K DPI.",
+    "urlPic": "https://img.ksp.co.il/item/289906/b_1.jpg?v=5",
+    "stock": 5,
+    "companyName": "Roccat"
+  },
+  {
+    "name": "HyperX Pulsefire Haste 2 Wireless Gaming Mouse - Black",
+    "price": 410,
+    "category": "Mouses",
+    "isAvailable": true,
+    "description": "Play at the speed of light with the Pulsefire Haste 2. Includes a hard shell, but with a total weight of only 59 grams. Designed to help you move faster and better without feeling fatigue that builds up over time.",
+    "urlPic": "https://img.ksp.co.il/item/277619/b_1.jpg?v=5",
+    "stock": 2,
+    "companyName": "HyperX"
+  },
+  {
+    "name": "HyperX Pulsefire Haste 2 Wireless Gaming Mouse - White",
+    "price": 410,
+    "category": "Mouses",
+    "isAvailable": true,
+    "description": "Play at the speed of light with the Pulsefire Haste 2. Includes a hard shell, but with a total weight of only 59 grams. Designed to help you move faster and better without feeling fatigue that builds up over time.",
+    "urlPic": "https://img.ksp.co.il/item/277639/b_1.jpg?v=5",
+    "stock": 10,
+    "companyName": "HyperX"
+  },
+  {
+    "name": "Xiaomi Mi Dual Mode 1300DPI Silent Portable Wireless Mouse - Black",
+    "price": 78,
+    "category": "Mouses",
+    "isAvailable": true,
+    "description": "A high-quality two-mode wireless mouse from Xiaomi with quiet buttons and a scroll wheel.",
+    "urlPic": "https://img.ksp.co.il/item/130689/b_5.jpg?v=5",
+    "stock": 6,
+    "companyName": "Xiaomi"
+  },
+  {
+    "name": "Xiaomi Mi Dual Mode 1300DPI Silent Portable Wireless Mouse - White",
+    "price": 78,
+    "category": "Mouses",
+    "isAvailable": true,
+    "description": "A high-quality two-mode wireless mouse from Xiaomi with quiet buttons and a scroll wheel.",
+    "urlPic": "https://img.ksp.co.il/item/130675/b_1.jpg?v=5",
+    "stock": 78,
+    "companyName": "Xiaomi"
+  },
+  {
+    "name": "Envelope bag for laptop Lenovo Urban GX40Z50941 size 14 inches - gray color",
+    "price": 65,
+    "category": "Accessories",
+    "isAvailable": false,
+    "description": "A particularly thin and high-quality laptop bag from Lenovo, suitable for laptops up to 14 inches in size.",
+    "urlPic": "https://img.ksp.co.il/item/112997/b_1.jpg?v=5",
+    "stock": 0,
+    "companyName": "Lenovo"
+  },
+  {
+    "name": "Dell Essential laptop backpack up to 15.6 inches - black color",
+    "price": 99,
+    "category": "Accessories",
+    "isAvailable": true,
+    "description": "Gamer laptop backpack from Dell, suitable for 15.6 inch laptops.",
+    "urlPic": "https://img.ksp.co.il/item/132402/b_1.jpg?v=5",
+    "stock": 60,
+    "companyName": "Dell"
+  },
+  {
+    "name": "Designed desktop stand for 11-17 inch Blaupunkt laptop - black",
+    "price": 69,
+    "category": "Accessories",
+    "isAvailable": true,
+    "description": "High-quality stand for a laptop - compact and light - convenient to carry in the computer bag.",
+    "urlPic": "https://img.ksp.co.il/item/157169/b_1.jpg?v=5",
+    "stock": 13,
+    "companyName": "Blaupunkt"
+  },
+  {
+    "name": "Adapter 6 in 1 100W Type-C 4K UHD from UGREEN, gray color",
+    "price": 159,
+    "category": "Accessories",
+    "isAvailable": true,
+    "description": "6 in 1 100W Type-C 4K UHD adapter from UGREEN.",
+    "urlPic": "https://img.ksp.co.il/item/198923/b_1.jpg?v=5",
+    "stock": 10,
+    "companyName": "UGREEN"
+  },
+  {
+    "name": "Logitech Combo MK270 wireless keyboard and mouse set",
+    "price": 109,
+    "category": "Keyboards",
+    "isAvailable": true,
+    "description": "A high-quality wireless keyboard and mouse set from Logitech with 8 shortcut keys for easy access and long battery life.",
+    "urlPic": "https://img.ksp.co.il/item/21422/b_7.jpg?v=5",
+    "stock": 37,
+    "companyName": "Logitech"
+  },
+  {
+    "name": "ASUS CW100 wireless keyboard and mouse set - black color",
+    "price": 95,
+    "category": "Keyboards",
+    "isAvailable": true,
+    "description": "The CW100 wireless keyboard and mouse set from ASUS works through a USB dongle connection without the need for installations and includes technology to save electricity and long battery life, in a slim and lightweight design.",
+    "urlPic": "https://img.ksp.co.il/item/231383/b_1.jpg?v=5",
+    "stock": 59,
+    "companyName": "Asus"
+  },
+  {
+    "name": "Corsair K55 RGB PRO gamers keyboard",
+    "price": 240,
+    "category": "Keyboards",
+    "isAvailable": true,
+    "description": "A professional gaming keyboard from Corsair with illuminated keys in 16.8 million colors, macro keys, multimedia keys and anti-ghosting capabilities.",
+    "urlPic": "https://img.ksp.co.il/item/185254/b_11.jpg?v=5",
+    "stock": 5,
+    "companyName": "Corsair"
+  },
+  {
+    "name": "Logitech Silent MK295 wireless keyboard and mouse set - silent click - gray color",
+    "price": 149,
+    "category": "Keyboards",
+    "isAvailable": false,
+    "description": "A high-quality keyboard and mouse set from Logitech. SilentTouch technology to reduce 90% of noises, full size including shortcut keys, wireless connection and long battery life.",
+    "urlPic": "https://img.ksp.co.il/item/117350/b_5.jpg?v=5",
+    "stock": 0,
+    "companyName": "Logitech"
+  },
+  {
+    "name": "Asus ROG Falchion wireless mechanical gaming keyboard 65% Cherry MX RGB Red Switch",
+    "price": 719,
+    "category": "Keyboards",
+    "isAvailable": true,
+    "description": "ROG Falchion wireless mechanical gaming keyboard from Asus is a 65% configuration keyboard that includes RGB lighting, Cherry MX switches, durable keys and two connectivity modes - wireless or wired.",
+    "urlPic": "https://img.ksp.co.il/item/164000/b_1.jpg?v=5",
+    "stock": 27,
+    "companyName": "Asus"
+  },
+  {
+    "name": "Mechanical keyboard for gamers Logitech G512 RGB With Blue Switches Carbon",
+    "price": 599,
+    "category": "Keyboards",
+    "isAvailable": true,
+    "description": "A mechanical keyboard for gamers designed by Logitech with an RGB LED backlight with 16.8 million colors and a GX Blue switch.",
+    "urlPic": "https://img.ksp.co.il/item/55480/b_1.jpg?v=5",
+    "stock": 55,
+    "companyName": "Logitech"
+  },
+  {
+    "name": "SteelSeries Apex Pro Mini mechanical gaming keyboard",
+    "price": 799,
+    "category": "Keyboards",
+    "isAvailable": true,
+    "description": "A mechanical gaming keyboard from SteelSeries in a 60% mini configuration, includes innovative and fast OmniPoint 2.0 switches with the option of adjusting the click distance and programming two actions per key to create powerful gaming shortcuts.",
+    "urlPic": "https://img.ksp.co.il/item/225826/b_1.jpg?v=5",
+    "stock": 61,
+    "companyName": "SteelSeries"
+  },
+  {
+    "name": "Rapoo 8000M 2.4GHz Wireless / Bluetooth Multi-Mode keyboard and mouse set - white color",
+    "price": 88,
+    "category": "Keyboards",
+    "isAvailable": true,
+    "description": "A wireless keyboard and mouse set from Rapoo that works at 2.4GHz or Bluetooth.",
+    "urlPic": "https://img.ksp.co.il/item/66314/b_1.jpg?v=5",
+    "stock": 10,
+    "companyName": "Rapoo"
+  },
+  {
+    "name": "Asus TUF VG27AQ1A 27 Inch IPS WQHD G-Sync gaming computer screen",
+    "price": 1599,
+    "category": "Screens",
+    "isAvailable": true,
+    "description": "A high-quality computer screen from Asus that is especially suitable for gamers, with a refresh rate of 144Hz, 27 inches in size, with DP and HDMI ports, the option of hanging on the wall, built-in speakers and FreeSync support.",
+    "urlPic": "https://img.ksp.co.il/item/135453/b_1.jpg?v=5",
+    "stock": 2,
+    "companyName": "Asus"
+  },
+  {
+    "name": "Computer screen Samsung Essential S3 S31C S27C310EAM FHD IPS 27'' FreeSync",
+    "price": 589,
+    "category": "Screens",
+    "isAvailable": true,
+    "description": "27'' Samsung computer screen, Full HD resolution (1920x1080), includes VGA, HDMI connections and a variety of features for comfort and improved viewing, including FreeSync.",
+    "urlPic": "https://img.ksp.co.il/item/253420/b_12.jpg?v=5",
+    "stock": 5,
+    "companyName": "Samsung"
+  },
+  {
+    "name": "Computer screen Samsung Essential S3 S31C S24C310EAM FHD IPS 23.8'' FreeSync",
+    "price": 465,
+    "category": "Screens",
+    "isAvailable": false,
+    "description": "23.8'' Samsung computer screen, Full HD resolution (1920x1080), includes VGA, HDMI connections and a variety of features for comfort and improved viewing, including FreeSync.",
+    "urlPic": "https://img.ksp.co.il/item/260000/b_1.jpg?v=5",
+    "stock": 0,
+    "companyName": "Samsung"
+  },
+  {
+    "name": "Dell S2722DGM LED VA 165Hz QHD 27'' concave gaming computer screen",
+    "price": 1349,
+    "category": "Screens",
+    "isAvailable": true,
+    "description": "A concave gaming computer screen from DELL with a 27'' VA panel, QHD resolution with a 165Hz refresh rate, allows for a variety of adjustments and supports AMD FreeSync.",
+    "urlPic": "https://img.ksp.co.il/item/185115/b_1.jpg?v=5",
+    "stock": 3,
+    "companyName": "Dell"
+  },
+  {
+    "name": "Concave computer screen Dell S3423DWC LED VA 144Hz WQHD 34",
+    "price": 2099,
+    "category": "Screens",
+    "isAvailable": true,
+    "description": "A concave gaming computer screen from DELL with a 34'' VA panel, WQHD resolution with a 144Hz refresh rate, allows for a variety of adjustments and supports AMD FreeSync.",
+    "urlPic": "https://img.ksp.co.il/item/289341/b_1.jpg?v=5",
+    "stock": 95,
+    "companyName": "Dell"
+  },
+  {
+    "name": "Lenovo LOQ 17IRB8 90VH0063YS gaming brand computer",
+    "price": 4265,
+    "category": "Computers",
+    "isAvailable": true,
+    "description": "A pre-made desktop brand computer from the global company Lenovo, with an Intel® Core™ i5-13400F processor, an NVIDIA® GeForce RTX™ 3050 8GB graphics accelerator, 16GB memory, a 1TB SSD drive and no operating system.",
+    "urlPic": "https://img.ksp.co.il/item/266590/b_15.jpg?v=5",
+    "stock": 78,
+    "companyName": "Lenovo"
+  },
+  {
+    "name": "Lenovo Legion T5-26IRB8 Tower 90UU00J6YS gaming brand computer",
+    "price": 7699,
+    "category": "Computers",
+    "isAvailable": true,
+    "description": "A pre-made desktop brand computer from the global company Lenovo, with an Intel® Core™ i5 14400F processor, 32GB memory, a 1TB SSD drive, an NVIDIA® GeForce RTX™ 4060 Ti 8GB graphics card and includes an operating system.",
+    "urlPic": "https://img.ksp.co.il/item/289427/b_1.jpg?v=5",
+    "stock": 2,
+    "companyName": "Lenovo"
+  },
+  {
+    "name": "Lenovo IdeaCentre 3-07IAB7 90SM002AYS desktop brand computer",
+    "price": 2299,
+    "category": "Computers",
+    "isAvailable": false,
+    "description": "A pre-made desktop brand computer from Lenovo, with an Intel Pentium Gold G7400 processor, 8GB memory, a 256GB SSD drive and includes an operating system.",
+    "urlPic": "https://img.ksp.co.il/item/201341/b_17.jpg?v=5",
+    "stock": 0,
+    "companyName": "Lenovo"
+  },
+  {
+    "name": "Dell Alienware Aurora R15 desktop brand computer AL-RD33-14134 - Dark Side of the Moon color",
+    "price": 22990,
+    "category": "Computers",
+    "isAvailable": true,
+    "description": "Pre-made desktop brand computer from Dell, with Intel® Core™ i9 13900KF processor, 32GB memory, 1TB SSD drive, 2TB hard drive, NVIDIA® GeForce® RTX 4090 24GB graphics card and includes an operating system. This computer comes with an English keyboard only and a mouse.",
+    "urlPic": "https://img.ksp.co.il/item/256028/b_9.jpg?v=5",
+    "stock": 5,
+    "companyName": "Dell"
+  },
+  {
+    "name": "Lenovo Legion T7-34IRZ8 Tower 90V7009YYS gaming brand computer",
+    "price": 14683,
+    "category": "Computers",
+    "isAvailable": true,
+    "description": "A pre-made desktop brand computer from the global company Lenovo, with an Intel Core i9-13900KF processor, 64GB memory, 2TB SSD drive, NVIDIA Geforce RTX 4080 16GB graphics accelerator and includes an operating system.",
+    "urlPic": "https://img.ksp.co.il/item/278773/b_16.jpg?v=5",
+    "stock": 10,
+    "companyName": "Lenovo"
+  },
+  {
+    "name": "Lenovo Legion T5-26IRB8 Tower 90UU00JAYS gaming brand computer",
+    "price": 10599,
+    "category": "Computers",
+    "isAvailable": true,
+    "description": "A pre-made desktop brand computer from the global company Lenovo, with an Intel® Core™ i7-14700KF processor, 32GB memory, a 1TB SSD drive, a 12GB NVIDIA® GeForce RTX™ 4070 graphics card and includes an operating system.",
+    "urlPic": "https://img.ksp.co.il/item/289408/b_1.jpg?v=5",
+    "stock": 37,
+    "companyName": "Lenovo"
+  },
+  {
+    "name": "Lenovo Legion T5-26IRB8 Tower 90UU00J5YS gaming brand computer",
+    "price": 7299,
+    "category": "Computers",
+    "isAvailable": false,
+    "description": "A pre-made desktop brand computer from the global company Lenovo, with an Intel® Core™ Intel® Core™ i5 14400F processor, 32GB memory, a 1TB SSD drive, an NVIDIA® GeForce RTX™ 4060 8GB video card and includes an operating system.",
+    "urlPic": "https://img.ksp.co.il/item/289429/b_1.jpg?v=5",
+    "stock": 0,
+    "companyName": "Lenovo"
+  },
+  {
+    "name": "Lenovo IdeaCentre 5-14IRB8 90VK005UYS brand computer",
+    "price": 3641,
+    "category": "Computers",
+    "isAvailable": true,
+    "description": "A pre-made desktop brand computer from the global company Lenovo, with an Intel® Core™ i5-13400 processor, 32GB memory, a 1TB SSD drive and includes an operating system.",
+    "urlPic": "https://img.ksp.co.il/item/281868/b_15.jpg?v=5",
+    "stock": 78,
+    "companyName": "Lenovo"
+  },
+  {
+    "name": "Lenovo ideacentre brand computer 3-07IRB8 90VT007EYS - one year warranty",
+    "price": 2723,
+    "category": "Computers",
+    "isAvailable": true,
+    "description": "A pre-made desktop brand computer from the global company Lenovo, with an Intel® Core™ i3-14100 processor, 16GB memory, a 512GB SSD drive and includes an operating system.",
+    "urlPic": "https://img.ksp.co.il/item/290685/b_14.jpg?v=5",
+    "stock": 24,
+    "companyName": "Lenovo"
+  },
+  {
+    "name": "Brand computer Asus Tower S500TE S500TE-513400009W",
+    "price": 2899,
+    "category": "Computers",
+    "isAvailable": false,
+    "description": "A pre-made desktop brand computer from Asus, with an Intel® Core™ i5-13400 processor, 16GB memory, a 512GB SSD drive and includes an operating system. A wired optical mouse and a wired keyboard are included in the package.",
+    "urlPic": "https://img.ksp.co.il/item/289724/b_1.jpg?v=5",
+    "stock": 0,
+    "companyName": "Asus"
+  },
+  {
+    "name": "Lenovo LOQ 17IRB8 90VH0073YS gaming brand computer",
+    "price": 5851,
+    "category": "Computers",
+    "isAvailable": true,
+    "description": "A ready-made desktop brand computer from the global company Lenovo, which has an Intel® Core™ i5-13400F processor, an NVIDIA® GeForce RTX™ 4060 Ti 8GB graphics accelerator, 16GB memory, a 1TB SSD drive and includes an operating system.",
+    "urlPic": "https://img.ksp.co.il/item/288300/b_16.jpg?v=5",
+    "stock": 68,
+    "companyName": "Lenovo"
+  },
+  {
+    "name": "MSI MPG Infinite X2 13FNUF-081IL gaming brand computer",
+    "price": 10699,
+    "category": "Computers",
+    "isAvailable": true,
+    "description": "Pre-made desktop brand computer from MSI, with Intel® Core™ i7-13700KF processor, NVIDIA® GeForce® RTX™ 4070 Ti 12GB graphics accelerator, 32GB memory, 1TB SSD drive and includes an operating system.",
+    "urlPic": "https://img.ksp.co.il/item/262424/b_6.jpg?v=5",
+    "stock": 35,
+    "companyName": "MSI"
+  },
+  {
+    "name": "Lenovo IdeaCentre 5-14IRB8 90VK003WYS brand computer",
+    "price": 4004,
+    "category": "Computers",
+    "isAvailable": false,
+    "description": "A pre-made desktop brand computer from the global company Lenovo, with an Intel® Core™ i7-13700 processor, 16GB memory, a 1TB SSD drive and no operating system.",
+    "urlPic": "https://img.ksp.co.il/item/257915/b_14.jpg?v=5",
+    "stock": 0,
+    "companyName": "Lenovo"
+  },
+  {
+    "name": "Asus ExpertBook B3 B3000DQ1A-HT0153M laptop - Star Black color - includes stand/cover, soft detachable keyboard and Garaged Stylus pen",
+    "price": 989,
+    "category": "LaptopComputers",
+    "isAvailable": true,
+    "description": "Laptop from Asus with a 10.5'' screen with WUXGA resolution (1920x1200), Qualcomm® Snapdragon™ 7c Gen 2 processor, 4GB internal memory, 128G eMMC drive and includes Windows 11 Home S operating system.",
+    "urlPic": "https://img.ksp.co.il/item/284484/b_1.jpg?v=5",
+    "stock": 89,
+    "companyName": "Asus"
+  },
+  {
+    "name": "Laptop with touch screen Lenovo IdeaPad Flex 5-14ALC7 82R900EAIV - Cloud Gray color",
+    "price": 2589,
+    "category": "LaptopComputers",
+    "isAvailable": true,
+    "description": "A laptop from Lenovo with a 14-inch WUXGA (1920x1200) resolution touchscreen, AMD Ryzen 5 5500U processor, 8GB internal memory, 256GB SSD drive and includes the Windows® 11 Home S operating system.",
+    "urlPic": "https://img.ksp.co.il/item/279409/b_18.jpg?v=5",
+    "stock": 95,
+    "companyName": "Lenovo"
+  },
+  {
+    "name": "Asus Vivobook 15 X1504ZA-NJ192W laptop - Cool Silver color",
+    "price": 3249,
+    "category": "LaptopComputers",
+    "isAvailable": true,
+    "description": "ASUS laptop with a 15.6'' screen, FHD resolution (1920x1080), Intel® Core™ i5-1235U processor, 16GB internal memory, 512GB SSD drive and includes an operating system.",
+    "urlPic": "https://img.ksp.co.il/item/262064/b_14.jpg?v=5",
+    "stock": 5,
+    "companyName": "Asus"
+  },
+  {
+    "name": "Asus Zenbook 14 UX3402VA-KM063W laptop - Ponder Blue color - envelope cover included in the package!",
+    "price": 6030,
+    "category": "LaptopComputers",
+    "isAvailable": true,
+    "description": "Asus 14'' laptop with 2.8K (2880x1800) OLED resolution, Intel® Core™ i7-1360P processor, 16GB internal memory, 1TB SSD drive and includes an operating system.",
+    "urlPic": "https://img.ksp.co.il/item/246551/b_17.jpg?v=5",
+    "stock": 4,
+    "companyName": "Asus"
+  },
+  {
+    "name": "Laptop Lenovo IdeaPad Slim 3-15IRH8 83EM0035IV - Arctic Gray color - one year warranty",
+    "price": 3539,
+    "category": "LaptopComputers",
+    "isAvailable": false,
+    "description": "Lenovo laptop size 15.6'' with FHD resolution (1920x1080), Intel® Core™ i7-13620H processor, 16GB internal memory, 512GB SSD drive and includes an operating system.",
+    "urlPic": "https://img.ksp.co.il/item/286035/b_12.jpg?v=5",
+    "stock": 0,
+    "companyName": "Lenovo"
+  },
+  {
+    "name": "Lenovo IdeaPad Slim 3-15IRH8 83EM003DIV laptop - Arctic Gray color - three-year warranty",
+    "price": 3989,
+    "category": "LaptopComputers",
+    "isAvailable": true,
+    "description": "Lenovo laptop size 15.6'' with FHD resolution (1920x1080), Intel® Core™ i7-13620H processor, 16GB internal memory, 1TB SSD drive and includes an operating system.",
+    "urlPic": "https://img.ksp.co.il/item/286038/b_9.jpg?v=5",
+    "stock": 10,
+    "companyName": "Lenovo"
+  },
+  {
+    "name": "Computer Apple MacBook Pro 14 Apple M3 Chip 8-Core CPU, 10-Core GPU, 512GB SSD Storage, 16GB Unified Memory - Space Gray color - Hebrew / English keyboard - Model Z1C8000EB",
+    "price": 8599,
+    "category": "LaptopComputers",
+    "isAvailable": true,
+    "description": "Apple MacBook Pro computer with a 14'' screen, Apple M3 8-core processor, 10-core graphics accelerator, 512GB SSD storage drive, 16GB internal RAM memory, Hebrew / English keyboard and includes macOS operating system.",
+    "urlPic": "https://img.ksp.co.il/item/282555/b_2.jpg?v=5",
+    "stock": 8,
+    "companyName": "Apple"
+  },
+  {
+    "name": "Laptop Asus TUF Gaming F15 (2023) FX507ZU4-LP057W - Color Jaeger Gray",
+    "price": 5877,
+    "category": "LaptopComputers",
+    "isAvailable": true,
+    "description": "ASUS gaming laptop with a 15.6'' screen, FHD resolution (1920x1080), Intel® Core™ i7-12700H processor, NVIDIA® GeForce RTX™ 4050 Laptop 6GB graphics accelerator, 16GB internal memory, 1TB SSD drive and includes an operating system .",
+    "urlPic": "https://img.ksp.co.il/item/261757/b_20.jpg?v=5",
+    "stock": 5,
+    "companyName": "Asus"
+  },
+  {
+    "name": "Laptop Asus TUF Gaming F15 (2023) FX507ZV4-HQ043W - Color Jaeger Gray",
+    "price": 6570,
+    "category": "LaptopComputers",
+    "isAvailable": true,
+    "description": "ASUS gaming laptop with a 15.6'' screen, WQHD resolution (2560x1440), Intel® Core™ i7-12700H processor, NVIDIA® GeForce RTX™ 4060 Laptop 8GB graphics accelerator, 16GB internal memory, 1TB SSD drive and includes an operating system .",
+    "urlPic": "https://img.ksp.co.il/item/254945/b_1.jpg?v=5",
+    "stock": 25,
+    "companyName": "Asus"
+  },
+  {
+    "name": "Laptop Asus Vivobook 15 X1504VA-BQ139W - Blue color",
+    "price": 4349,
+    "category": "LaptopComputers",
+    "isAvailable": true,
+    "description": "ASUS laptop with a 15.6'' screen, FHD resolution (1920x1080), Intel® Core™ i7-1355U processor, 16GB internal memory, 1TB SSD drive and includes an operating system.",
+    "urlPic": "https://img.ksp.co.il/item/262675/b_1.jpg?v=5",
+    "stock": 78,
+    "companyName": "Asus"
+  },
+  {
+    "name": "Laptop Asus Vivobook 15 OLED X1505VA-MA161W - Indie Black color",
+    "price": 4393,
+    "category": "LaptopComputers",
+    "isAvailable": true,
+    "description": "ASUS laptop with a 15.6'' screen, 2.8K resolution (2880x1620), Intel® Core™ i7-1355U processor, 16GB internal memory, 1TB SSD drive and includes an operating system.",
+    "urlPic": "https://img.ksp.co.il/item/262564/b_16.jpg?v=5",
+    "stock": 10,
+    "companyName": "Asus"
+  },
+  {
+    "name": "Asus Vivobook 15 X1504ZA-NJ133W laptop - Cool Silver color",
+    "price": 3899,
+    "category": "LaptopComputers",
+    "isAvailable": false,
+    "description": "ASUS laptop with a 15.6'' screen, FHD resolution (1920x1080), Intel® Core™ i7-1255U processor, 16GB internal memory, 1TB SSD drive and includes an operating system.",
+    "urlPic": "https://img.ksp.co.il/item/264840/b_14.jpg?v=5",
+    "stock": 0,
+    "companyName": "Asus"
+  },
+  {
+    "name": "Laptop Lenovo LOQ 15IRX9 83DV00CHIV - Luna Gray color",
+    "price": 5900,
+    "category": "LaptopComputers",
+    "isAvailable": true,
+    "description": "Laptop from Lenovo size 15.6'' with FHD resolution (1920x1080), Intel® Core™ i7-13650HX processor, NVIDIA® GeForce RTX™ 3050 6GB graphics accelerator, 16GB internal memory, 1TB SSD drive and includes an operating system.",
+    "urlPic": "https://img.ksp.co.il/item/292021/b_16.jpg?v=5",
+    "stock": 8,
+    "companyName": "Lenovo"
+  },
+  {
+    "name": "Cell phone (SM-S928B/DS) Samsung Galaxy S24 Ultra 12GB+256GB - Color Titanium Yellow - One year warranty Official importer Sunny",
+    "price": 5049,
+    "category": "Cellphones",
+    "isAvailable": true,
+    "description": "A quality cell phone from Samsung with a 6.8-inch screen, 4 rear cameras and a front selfie camera, support for the fifth generation 5G network and a fingerprint reader.",
+    "urlPic": "https://img.ksp.co.il/item/289961/b_1.jpg?v=5",
+    "stock": 20,
+    "companyName": "Samsung"
+  },
+  {
+    "name": "Apple iPhone 15 Pro Max 256GB - natural titanium color - one year warranty official importer - without charger and without headphones",
+    "price": 6039,
+    "category": "Cellphones",
+    "isAvailable": true,
+    "description": "The powerful iPhone 15 Pro Max from Apple, with a 6.7 inch Super Retina XDR screen, with a facial recognition sensor, a powerful A17 Pro main processor, three rear cameras 48+12+12 megapixels, a 12 megapixel selfie camera, wireless charging option and support for the generation network The fifth 5G.",
+    "urlPic": "https://img.ksp.co.il/item/277805/b_1.jpg?v=5",
+    "stock": 5,
+    "companyName": "Apple"
+  },
+  {
+    "name": "Mobile phone (SM-S928B/DS) Samsung Galaxy S24 Ultra 12GB+512GB - Color Titanium Black - One year warranty Official importer Sunny",
+    "price": 5549,
+    "category": "Cellphones",
+    "isAvailable": true,
+    "description": "A quality cell phone from Samsung with a 6.8-inch screen, 4 rear cameras and a front selfie camera, support for the fifth generation 5G network and a fingerprint reader.",
+    "urlPic": "https://img.ksp.co.il/item/289953/b_1.jpg?v=5",
+    "stock": 89,
+    "companyName": "Samsung"
+  },
+  {
+    "name": "Cell phone (SM-S926B/DS) Samsung Galaxy S24+ 12GB+256GB - Onyx Black color - One year warranty Official importer Sunny",
+    "price": 3899,
+    "category": "Cellphones",
+    "isAvailable": false,
+    "description": "A quality cell phone from Samsung with a 6.7-inch screen, 3 rear cameras and a front selfie camera, support for the fifth generation 5G network and a fingerprint reader.",
+    "urlPic": "https://img.ksp.co.il/item/289795/b_1.jpg?v=5",
+    "stock": 0,
+    "companyName": "Samsung"
+  },
+  {
+    "name": "Apple iPhone 14 256GB - blue color - one year warranty official importer - without charger and without headphones",
+    "price": 3599,
+    "category": "Cellphones",
+    "isAvailable": true,
+    "description": "The powerful iPhone 14 from Apple, with a 6.1 inch Super Retina XDR OLED screen, with a facial recognition sensor, an A15 Bionic main processor, a pair of 12 megapixel rear cameras, a 12 megapixel selfie camera, wireless charging option and support for the fifth generation 5G network.",
+    "urlPic": "https://img.ksp.co.il/item/226956/b_7.jpg?v=5",
+    "stock": 85,
+    "companyName": "Apple"
+  },
+  {
+    "name": "Xiaomi Redmi Note 13 8GB+256GB cell phone - black color - two years warranty official importer by Hamilton",
+    "price": 979,
+    "category": "Cellphones",
+    "isAvailable": true,
+    "description": "A quality mobile phone from Xiaomi with a 6.67-inch screen, a three-camera array 108MP + 8MP + 2MP and a 16MP selfie camera, an 8-core chipset, supports the fourth generation 4G LTE network and has a fingerprint reader.",
+    "urlPic": "https://img.ksp.co.il/item/290213/b_1.jpg?v=5",
+    "stock": 10,
+    "companyName": "Xiaomi"
+  },
+  {
+    "name": "Apple iPhone 15 128GB - blue color - one year warranty official importer - without charger and without headphones",
+    "price": 3680,
+    "category": "Cellphones",
+    "isAvailable": true,
+    "description": "The powerful iPhone 15 from Apple, with a 6.1 inch Super Retina XDR OLED screen, with a facial recognition sensor, an A16 Bionic main processor, a pair of rear cameras, one with 48MP and the other with 12MP, a 12MP selfie camera, wireless charging option and support for the fifth generation 5G network.",
+    "urlPic": "https://img.ksp.co.il/item/277494/b_1.jpg?v=5",
+    "stock": 60,
+    "companyName": "Apple"
+  },
+  {
+    "name": "Cell phone (SM-S921B/DS) Samsung Galaxy S24 8GB+128GB - Onyx Black color - One year warranty Official Sunny importer",
+    "price": 3199,
+    "category": "Cellphones",
+    "isAvailable": true,
+    "description": "A quality cell phone from Samsung with a 6.2-inch screen, 3 rear cameras and a front selfie camera, support for the fifth generation 5G network and a fingerprint reader.",
+    "urlPic": "https://img.ksp.co.il/item/289710/b_1.jpg?v=5",
+    "stock": 6,
+    "companyName": "Samsung"
+  },
+  {
+    "name": "Apple iPhone 15 Pro 256GB - black titanium color - one year warranty official importer - without charger and without headphones",
+    "price": 5454,
+    "category": "Cellphones",
+    "isAvailable": true,
+    "description": "The powerful iPhone 15 Pro from Apple, with a 6.1 inch Super Retina XDR screen, with a facial recognition sensor, a powerful A17 Pro main processor, three rear cameras 48+12+12 megapixels, a 12 megapixel selfie camera, wireless charging option and support for the fifth generation network 5G.",
+    "urlPic": "https://img.ksp.co.il/item/277857/b_1.jpg?v=5",
+    "stock": 74,
+    "companyName": "Apple"
+  },
+  {
+    "name": "Apple iPhone 15 128GB - black color - one year warranty official importer - without charger and without headphones",
+    "price": 3680,
+    "category": "Cellphones",
+    "isAvailable": true,
+    "description": "The powerful iPhone 15 from Apple, with a 6.1 inch Super Retina XDR OLED screen, with a facial recognition sensor, an A16 Bionic main processor, a pair of rear cameras, one with 48MP and the other with 12MP, a 12MP selfie camera, wireless charging option and support for the fifth generation 5G network.",
+    "urlPic": "https://img.ksp.co.il/item/277502/b_1.jpg?v=5",
+    "stock": 16,
+    "companyName": "Apple"
+  },
+  {
+    "name": "Cell phone (SM-S921B/DS) Samsung Galaxy S24 8GB+128GB - Onyx Black color - One year warranty Official Sunny importer",
+    "price": 3199,
+    "category": "Cellphones",
+    "isAvailable": true,
+    "description": "A quality cell phone from Samsung with a 6.2-inch screen, 3 rear cameras and a front selfie camera, support for the fifth generation 5G network and a fingerprint reader.",
+    "urlPic": "https://img.ksp.co.il/item/289710/b_1.jpg?v=5",
+    "stock": 82,
+    "companyName": "Samsung"
+  },
+  {
+    "name": "Apple iPhone 15 Pro 256GB - black titanium color - one year warranty official importer - without charger and without headphones",
+    "price": 5454,
+    "category": "Cellphones",
+    "isAvailable": true,
+    "description": "The powerful iPhone 15 Pro from Apple, with a 6.1 inch Super Retina XDR screen, with a facial recognition sensor, a powerful A17 Pro main processor, three rear cameras 48+12+12 megapixels, a 12 megapixel selfie camera, wireless charging option and support for the fifth generation network 5G.",
+    "urlPic": "https://img.ksp.co.il/item/277857/b_1.jpg?v=5",
+    "stock": 26,
+    "companyName": "Apple"
+  },
+  {
+    "name": "Apple iPhone 15 128GB - black color - one year warranty official importer - without charger and without headphones",
+    "price": 3680,
+    "category": "Cellphones",
+    "isAvailable": false,
+    "description": "The powerful iPhone 15 from Apple, with a 6.1 inch Super Retina XDR OLED screen, with a facial recognition sensor, an A16 Bionic main processor, a pair of rear cameras, one with 48MP and the other with 12MP, a 12MP selfie camera, wireless charging option and support for the fifth generation 5G network.",
+    "urlPic": "https://img.ksp.co.il/item/277502/b_1.jpg?v=5",
+    "stock": 0,
+    "companyName": "Apple"
+  },
+  {
+    "name": "Apple iPhone 15 Pro 128GB - black titanium color - one year warranty official importer - without charger and without headphones",
+    "price": 4940,
+    "category": "Cellphones",
+    "isAvailable": true,
+    "description": "The powerful iPhone 15 Pro from Apple, with a 6.1 inch Super Retina XDR screen, with a facial recognition sensor, a powerful A17 Pro main processor, three rear cameras 48+12+12 megapixels, a 12 megapixel selfie camera, wireless charging option and support for the fifth generation network 5G.",
+    "urlPic": "https://img.ksp.co.il/item/277844/b_1.jpg?v=5",
+    "stock": 4,
+    "companyName": "Apple"
+  },
+  {
+    "name": "Xiaomi Redmi Note 13 Pro+ 5G 12GB+512GB cell phone - black color - two years warranty official importer by Hamilton",
+    "price": 2069,
+    "category": "Cellphones",
+    "isAvailable": true,
+    "description": "A high-quality Xiaomi mobile phone with a 6.67-inch screen, a three-camera array 200MP + 8MP + 2MP and a 16MP selfie camera, an 8-core chipset, supports the fifth generation 5G network and has a fingerprint reader.",
+    "urlPic": "https://img.ksp.co.il/item/290661/b_1.jpg?v=5",
+    "stock": 29,
+    "companyName": "Xiaomi"
+  },
+  {
+    "name": "Cell phone (SM-S928B/DS) Samsung Galaxy S24 Ultra 12GB+256GB - Color Titanium Violet - One year warranty Official importer Sunny",
+    "price": 5049,
+    "category": "Cellphones",
+    "isAvailable": true,
+    "description": "A quality cell phone from Samsung with a 6.8-inch screen, 4 rear cameras and a front selfie camera, support for the fifth generation 5G network and a fingerprint reader.",
+    "urlPic": "https://img.ksp.co.il/item/289958/b_16.jpg?v=5",
+    "stock": 10,
+    "companyName": "Samsung"
+  },
+  {
+    "name": "Fast wall charger Samsung Super Fast Travel Charger 25W + USB Type-C cable - white color",
+    "price": 75,
+    "category": "Accessories",
+    "isAvailable": true,
+    "description": "An original wall charger from Samsung that enables extremely fast charging, comes in original packaging that also includes a USB Type-C cable.",
+    "urlPic": "https://img.ksp.co.il/item/79667/b_1.jpg?v=5",
+    "stock": 200,
+    "companyName": "Samsung"
+  },
+  {
+    "name": "Fast wall charger Samsung Super Fast Travel Charger 25W + USB Type-C cable - black color",
+    "price": 79,
+    "category": "Accessories",
+    "isAvailable": true,
+    "description": "An original wall charger from Samsung that enables extremely fast charging, comes in original packaging that also includes a USB Type-C cable.",
+    "urlPic": "https://img.ksp.co.il/item/79666/b_1.jpg?v=5",
+    "stock": 150,
+    "companyName": "Samsung"
+  },
+  {
+    "name": "Fast wall charger Samsung Super Fast Travel Charger 25W - white color",
+    "price": 45,
+    "category": "Accessories",
+    "isAvailable": true,
+    "description": "An original wall charger from Samsung that enables extremely fast charging.",
+    "urlPic": "https://img.ksp.co.il/item/133641/b_2.jpg?v=5",
+    "stock": 209,
+    "companyName": "Samsung"
+  },
+  {
+    "name": "Apple 20W USB-C wall charger",
+    "price": 83,
+    "category": "Accessories",
+    "isAvailable": true,
+    "description": "Original and powerful wall charger from Apple with USB type C connection for iPhones and iPads.",
+    "urlPic": "https://img.ksp.co.il/item/121223/b_1.jpg?v=5",
+    "stock": 88,
+    "companyName": "Apple"
+  },
+  {
+    "name": "Apple MagSafe wireless charger - white color",
+    "price": 159,
+    "category": "Accessories",
+    "isAvailable": true,
+    "description": "A high-quality wireless charging pad from Apple that allows you to charge your smartphone easily and without cables.",
+    "urlPic": "https://img.ksp.co.il/item/121218/b_2.jpg?v=5",
+    "stock": 50,
+    "companyName": "Apple"
+  },
+  {
+    "name": "Apple iPad 2022 10.9'' 64GB WiFi - silver color",
+    "price": 1749,
+    "category": "Tablets",
+    "isAvailable": true,
+    "description": "The iPad from Apple is powerful and lightweight, with a 10.9'' Liquid Retina IPS LCD display, a powerful A14 Bionic processor, a wide 12 megapixel rear camera + a 12 megapixel ultra wide selfie camera and a wide variety of advanced features.",
+    "urlPic": "https://img.ksp.co.il/item/230589/b_1.jpg?v=5",
+    "stock": 53,
+    "companyName": "Apple"
+  },
+  {
+    "name": "iPad Apple iPad Pro 2022 11'' 128GB WiFi - silver color",
+    "price": 3599,
+    "category": "Tablets",
+    "isAvailable": true,
+    "description": "The iPad Pro from Apple is powerful and fast, with an 11'' Liquid Retina IPS LCD display, a powerful Apple M2 processor, a pair of 12 + 10 megapixel rear cameras + a LiDAR sensor and a facial recognition sensor, a 12 megapixel selfie camera and a wide variety of advanced features For the ultimate iPad experience.",
+    "urlPic": "https://img.ksp.co.il/item/230693/b_1.jpg?v=5",
+    "stock": 73,
+    "companyName": "Apple"
+  },
+  {
+    "name": "iPad Apple iPad Pro 2022 11'' 128GB WiFi - Space Gray color",
+    "price": 3599,
+    "category": "Tablets",
+    "isAvailable": true,
+    "description": "The iPad Pro from Apple is powerful and fast, with an 11'' Liquid Retina IPS LCD display, a powerful Apple M2 processor, a pair of 12 + 10 megapixel rear cameras + a LiDAR sensor and a facial recognition sensor, a 12 megapixel selfie camera and a wide variety of advanced features For the ultimate iPad experience.",
+    "urlPic": "https://img.ksp.co.il/item/230772/b_1.jpg?v=5",
+    "stock": 73,
+    "companyName": "Apple"
+  },
+  {
+    "name": "Xiaomi Pad 6 8GB+256GB tablet - black color - two years warranty official importer Hamilton",
+    "price": 1699,
+    "category": "Tablets",
+    "isAvailable": true,
+    "description": "A tablet from Xiaomi with an 11'' screen, Snapdragon 870 processor, 8GB RAM memory, 256GB storage, WIFI and Bluetooth connectivity.",
+    "urlPic": "https://img.ksp.co.il/item/269337/b_1.jpg?v=5",
+    "stock": 10,
+    "companyName": "Xiaomi"
+  },
+  {
+    "name": "iPad Apple iPad Air 10.9'' 2022 64GB WiFi - pink color",
+    "price": 2699,
+    "category": "Tablets",
+    "isAvailable": true,
+    "description": "The iPad Air from Apple is compact and portable, has a 10.9-inch Retina display, a fingerprint sensor, a powerful M1 extremely fast processor, a 12 megapixel rear camera, a 12 megapixel selfie camera and a variety of other features.",
+    "urlPic": "https://img.ksp.co.il/item/198606/b_1.jpg?v=5",
+    "stock": 12,
+    "companyName": "Apple"
+  },
+  {
+    "name": "Samsung Galaxy Tab S9 FE+ Octa Core 2.4GHz 8GB+128GB 12.4'' tablet (SM-X610) - WIFI - gray color - one year warranty official importer",
+    "price": 2490,
+    "category": "Tablets",
+    "isAvailable": true,
+    "description": "A quality tablet from Samsung with a 12.4'' screen, 8 megapixel rear cameras and a 12 megapixel selfie camera, an 8-core chipset, an advanced Android operating system.",
+    "urlPic": "https://img.ksp.co.il/item/280883/b_1.jpg?v=5",
+    "stock": 71,
+    "companyName": "Samsung"
+  },
+  {
+    "name": "Apple iPad 2021 10.2'' 64GB WiFi - silver color",
+    "price": 1499,
+    "category": "Tablets",
+    "isAvailable": true,
+    "description": "The iPad from Apple is powerful and lightweight, has a 10.2 inch Retina IPS LCD display, a powerful A13 Bionic processor, an 8 megapixel rear camera + selfie camera and a wide variety of advanced features.",
+    "urlPic": "https://img.ksp.co.il/item/171791/b_1.jpg?v=5",
+    "stock": 41,
+    "companyName": "Apple"
+  },
+  {
+    "name": "iPad Apple iPad Air 10.9'' 2022 64GB WiFi - Space Gray color",
+    "price": 2699,
+    "category": "Tablets",
+    "isAvailable": false,
+    "description": "The iPad Air from Apple is compact and portable, has a 10.9-inch Retina display, a fingerprint sensor, a powerful M1 extremely fast processor, a 12 megapixel rear camera, a 12 megapixel selfie camera and a variety of other features.",
+    "urlPic": "https://img.ksp.co.il/item/198437/b_1.jpg?v=5",
+    "stock": 0,
+    "companyName": "Apple"
+  },
+  {
+    "name": "iPad Apple iPad Pro 2022 12.9'' 128GB WiFi - Space Gray color",
+    "price": 4849,
+    "category": "Tablets",
+    "isAvailable": true,
+    "description": "The iPad Pro from Apple is powerful and fast, with a 12.9'' Liquid Retina XDR display, a powerful Apple M2 processor, a pair of 12 + 10 megapixel rear cameras + a LiDAR sensor and a facial recognition sensor, a 12 megapixel selfie camera and a wide variety of advanced features for the experience Ultimate iPad.",
+    "urlPic": "https://img.ksp.co.il/item/231054/b_1.jpg?v=5",
+    "stock": 21,
+    "companyName": "Apple"
+  },
+  {
+    "name": "Tablet Samsung Galaxy Tab S6 Lite (2022 Edition) 4GB+64GB SM-P619 - 4G - Oxford Gray color - one year warranty official importer",
+    "price": 1499,
+    "category": "Tablets",
+    "isAvailable": true,
+    "description": "A quality tablet from Samsung with a 10.4'' screen, an 8 megapixel rear camera and a 5 megapixel selfie camera, an 8-core chipset and an advanced Android operating system and supports the fourth generation 4G LTE network. Includes S Pen.",
+    "urlPic": "https://img.ksp.co.il/item/222116/b_8.jpg?v=5",
+    "stock": 19,
+    "companyName": "Samsung"
+  },
+  {
+    "name": "Samsung Galaxy Tab A 32GB SM-T295 tablet - 4G - black color - one year warranty",
+    "price": 489,
+    "category": "Tablets",
+    "isAvailable": true,
+    "description": "Samsung Galaxy Tab A 32GB SM-T295 tablet - 4G - black color - one year warranty.",
+    "urlPic": "https://img.ksp.co.il/item/243588/b_7.jpg?v=5",
+    "stock": 55,
+    "companyName": "Samsung"
+  },
+  {
+    "name": "Smart sports watch Xiaomi Redmi Watch 4 - Black color - One year warranty Official importer by Hamilton",
+    "price": 529,
+    "category": "WatchsAndBands",
+    "isAvailable": false,
+    "description": "Smart sports watch Xiaomi Redmi Watch 4, including SpO2 (blood oxygen percentage), heart rate and GPS that allows you to monitor your health around the clock.",
+    "urlPic": "https://img.ksp.co.il/item/290377/b_1.jpg?v=5",
+    "stock": 0,
+    "companyName": "Xiaomi"
+  },
+  {
+    "name": "Smart watch Apple Watch SE 2023 GPS 44mm watch color Midnight Aluminum strap color Midnight Sport Band - size M/L",
+    "price": 1249,
+    "category": "WatchsAndBands",
+    "isAvailable": true,
+    "description": "A smart watch for measuring fitness data from Apple that provides life documentation on the wrist and allows you to track all your activities accurately, has a color screen with a Retina LTPO OLED display and includes GPS support.",
+    "urlPic": "https://img.ksp.co.il/item/277667/b_3.jpg?v=5",
+    "stock": 33,
+    "companyName": "Apple"
+  },
+  {
+    "name": "Smart watch Samsung Galaxy Watch6 Classic 43mm SM-R955F - black color - with LTE connectivity - one year warranty",
+    "price": 1199,
+    "category": "WatchsAndBands",
+    "isAvailable": true,
+    "description": "The Galaxy Watch6 Classic smartwatch from Samsung allows you to track your health around the clock with sleep tracking, health monitoring and a larger battery for everyday use.",
+    "urlPic": "https://img.ksp.co.il/item/291127/b_1.jpg?v=5",
+    "stock": 10,
+    "companyName": "Samsung"
+  },
+  {
+    "name": "Smart watch Apple Watch Ultra 2 49mm GPS + Cellular Watch color Titanium Case Strap color Blue Alpine Loop Strap size Large",
+    "price": 3585,
+    "category": "WatchsAndBands",
+    "isAvailable": true,
+    "description": "A smart watch for measuring fitness data from Apple that provides life documentation on the wrist and allows you to track all your activities accurately, has a color screen with a Retina LTPO OLED display and includes GPS and eSIM support.",
+    "urlPic": "https://img.ksp.co.il/item/277547/b_1.jpg?v=5",
+    "stock": 60,
+    "companyName": "Apple"
+  },
+  {
+    "name": "Smart watch Samsung Galaxy Watch6 Classic 47mm SM-R960 - black color - one year warranty official importer",
+    "price": 1569,
+    "category": "WatchsAndBands",
+    "isAvailable": true,
+    "description": "The Galaxy Watch6 Classic smartwatch from Samsung allows you to track your health around the clock with sleep tracking, health monitoring and a larger battery for everyday use.",
+    "urlPic": "https://img.ksp.co.il/item/271191/b_1.jpg?v=5",
+    "stock": 5,
+    "companyName": "Samsung"
+  },
+  {
+    "name": "Xiaomi Smart Band 8 wrist watch - graphite black color - one year warranty official importer by Hamilton",
+    "price": 199,
+    "category": "WatchsAndBands",
+    "isAvailable": false,
+    "description": "A quality wristband watch from Xiaomi with an innovative user interface for displaying more information on each screen and fast charging, includes a wide range of measurements and exercises in addition to a variety of other features, displays notifications from smartphone applications and with a battery life of up to 16 days.",
+    "urlPic": "https://img.ksp.co.il/item/280373/b_1.jpg?v=5",
+    "stock": 0,
+    "companyName": "Xiaomi"
+  },
+  {
+    "name": "Garmin Vivosmart 5 fitness band - Large size - Black color - One year warranty Official importer by Ronlight",
+    "price": 649,
+    "category": "WatchsAndBands",
+    "isAvailable": true,
+    "description": "A wristband for measuring high-quality fitness data from Garmin that provides a life record on the wrist, allows accurate heart rate monitoring around the clock and after all your activities, water resistance and measures steps, calorie burning, call notifications and more.",
+    "urlPic": "https://img.ksp.co.il/item/206050/b_1.jpg?v=5",
+    "stock": 90,
+    "companyName": "Garmin"
+  },
+  {
+    "name": "Orange Amazfit Band 5 wrist strap watch + additional black strap as a gift in the shopping cart - one year warranty official importer by H.Y.",
+    "price": 79,
+    "category": "WatchsAndBands",
+    "isAvailable": true,
+    "description": "A high-quality wrist watch from Amazfit that shows the time, displays notifications about calls, messages and the weather and includes a heart rate monitor, blood oxygen meter and more, water resistant to the 5ATM standard. Has a battery that is enough for up to 15 working days and includes support for Amazon Alexa.",
+    "urlPic": "https://img.ksp.co.il/item/123504/b_1.jpg?v=5",
+    "stock": 50,
+    "companyName": "Amazfit"
+  },
+  {
+    "name": "Xiaomi Redmi Smart Band Pro Wristband Watch - Black Color - One Year Warranty Official Importer by Hamilton",
+    "price": 235,
+    "category": "WatchsAndBands",
+    "isAvailable": false,
+    "description": "The Redmi wrist watch from Xiaomi has an innovative user interface for displaying more information on each screen, includes a wide range of measurements and exercises in addition to a variety of other features, displays notifications from smartphone applications and has a battery life of up to 14 days.",
+    "urlPic": "https://img.ksp.co.il/item/221021/b_1.jpg?v=5",
+    "stock": 0,
+    "companyName": "Xiaomi"
+  },
+  {
+    "name": "Xiaomi Smart Band 7 Pro wrist watch - black color - one year warranty official importer by Hamilton",
+    "price": 315,
+    "category": "WatchsAndBands",
+    "isAvailable": true,
+    "description": "A high-quality wrist strap watch from Xiaomi that shows the time, displays calls, messages and includes a heart rate monitor, pedometer, alerts, weather, and more, water resistant up to 50 meters, with a battery that is enough for up to 12 working days.",
+    "urlPic": "https://img.ksp.co.il/item/239612/b_6.jpg?v=5",
+    "stock": 69,
+    "companyName": "Xiaomi"
+  },
+  {
+    "name": "Xiaomi Smart Band 7 wrist watch - black color - one year warranty official importer by Hamilton",
+    "price": 169,
+    "category": "WatchsAndBands",
+    "isAvailable": false,
+    "description": "A quality wristband watch from Xiaomi with an innovative user interface for displaying more information on each screen, including a wide range of measurements and exercises in addition to a variety of other features, displays notifications from smartphone applications and with a battery life of up to 14 days.",
+    "urlPic": "https://img.ksp.co.il/item/217075/b_1.jpg?v=5",
+    "stock": 0,
+    "companyName": "Xiaomi"
+  },
+  {
+    "name": "Xiaomi Redmi Smart Band 2 wrist watch - black color - one year warranty official importer by Hamilton",
+    "price": 139,
+    "category": "WatchsAndBands",
+    "isAvailable": true,
+    "description": "Xiaomi's Redmi wrist watch - the new generation from Xiaomi - is bigger, more advanced, smarter, more accurate and has an innovative user interface to display more information on each screen.",
+    "urlPic": "https://img.ksp.co.il/item/249176/b_1.jpg?v=5",
+    "stock": 10,
+    "companyName": "Xiaomi"
+  },
+  {
+    "name": "Sporty smart bracelet with thermometer Blaupunkt BP-X1300",
+    "price": 149,
+    "category": "WatchsAndBands",
+    "isAvailable": true,
+    "description": "Sporty smart bracelet with BP-X1300 thermometer from Blaupunkt. A high-quality fitness bracelet with a variety of functions for monitoring and maintaining physical health. The bracelet is water resistant to the IP-67 standard and is fully compatible with iOS and Android devices. Its powerful battery is enough for up to 5 days of continuous use and up to 15 days of standby.",
+    "urlPic": "https://img.ksp.co.il/item/172984/b_1.jpg?v=5",
+    "stock": 92,
+    "companyName": "Blaupunkt"
+  },
+  {
+    "name": "Xiaomi Smart Band 8 wrist watch - champagne gold color - one year warranty",
+    "price": 169,
+    "category": "WatchsAndBands",
+    "isAvailable": false,
+    "description": "A quality wristband watch from Xiaomi with an innovative user interface for displaying more information on each screen and fast charging, includes a wide range of measurements and exercises in addition to a variety of other features, displays notifications from smartphone applications and with a battery life of up to 16 days.",
+    "urlPic": "https://img.ksp.co.il/item/292425/b_4.jpg?v=5",
+    "stock": 0,
+    "companyName": "Xiaomi"
+  }
+]

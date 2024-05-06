@@ -1,0 +1,38 @@
+[
+  {
+    "username": "Vladimir",
+    "email": "kremal1990@gmail.com",
+    "password": "Vv123456",
+    "isAdmin": true
+  },
+  {
+    "username": "Itshak",
+    "email": "or0548096690@gmail.com",
+    "password": "Ii123456",
+    "isAdmin": true
+  },
+  {
+    "username": "freeman",
+    "password": "FF123",
+    "email": "sele@gmail.com",
+    "isAdmin": false
+  },
+  {
+    "username": "adikk",
+    "password": "123456",
+    "email": "12345@gmail.com",
+    "isAdmin": false
+  },
+  {
+    "username": "qwe",
+    "password": "123",
+    "email": "qwe@qwe",
+    "isAdmin": false
+  },
+  {
+    "username": "rusik",
+    "password": "123",
+    "email": "rusik@gmail.com",
+    "isAdmin": false
+  }
+]
