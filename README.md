@@ -17,7 +17,7 @@ To run this App [NodeJs](https://nodejs.org/en/download/current) is required to 
 
 - Then in console enter command `node server.js`
 
-- In your browser follow the link `http://localhost:3000`
+- In your browser follow the link http://localhost:3000
 
 ### Description:
 
